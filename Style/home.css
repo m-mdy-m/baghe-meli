@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Sarbaz";
+  src: url("../../fonts/Sarbaz.otf");
+}
+@font-face {
+  font-family: "Vazir";
+  src: url("../../fonts/Vazir.ttf");
+}
+@font-face {
+  font-family: "Vazir-Light";
+  src: url("../../fonts/Vazir-Light.ttf");
+}
+@font-face {
+  font-family: "Vazir-Bold";
+  src: url("../../fonts/Vazir-Bold.ttf");
+}
+@font-face {
+  font-family: "Vazir-Black";
+  src: url("../../fonts/Vazir-Black.ttf");
+}
+@font-face {
+  font-family: "Vazir-Medium";
+  src: url("../../fonts/Vazir-Medium.ttf");
+}
+@font-face {
+  font-family: "Vazir-Thin";
+  src: url("../../fonts/Vazir-Thin.ttf");
+}
 * {
   padding: 0;
   border: none;
@@ -10,4 +38,24 @@ body {
   min-width: 100%;
   height: 100vh;
   background-color: #262626;
+  font-family: "Vazir";
+  font-size: 62.5%;
+}
+
+.header {
+  background-color: #fff;
+  min-width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.header__top {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 60%;
+  background-color: green;
+}
+.header__bottom {
+  flex: 1 1 40%;
+  background-color: red;
 }/*# sourceMappingURL=home.css.map */
