@@ -1,4 +1,42 @@
-$color_primary : #262626;
-$color__text-hover :#109d51 ;
-$color__primary-text :#ddfff1 ;
-$color__primary-footer : #00000000;
+@font-face {
+	font-family: "Sarbaz";
+	src: url("../../fonts/Sarbaz.otf");
+}
+@font-face {
+	font-family: "Vazir";
+	src: url("../../fonts/Vazir.ttf");
+}
+@font-face {
+	font-family: "Vazir-Light";
+	src: url("../../fonts/Vazir-Light.ttf");
+}
+@font-face {
+	font-family: "Vazir-Bold";
+	src: url("../../fonts/Vazir-Bold.ttf");
+}
+@font-face {
+	font-family: "Vazir-Black";
+	src: url("../../fonts/Vazir-Black.ttf");
+}
+@font-face {
+	font-family: "Vazir-Medium";
+	src: url("../../fonts/Vazir-Medium.ttf");
+}
+@font-face {
+	font-family: "Vazir-Thin";
+	src: url("../../fonts/Vazir-Thin.ttf");
+}
+
+$Vazir: "Vazir";
+$Vazir-Light: "Vazir-Light";
+$Vazir-Bold: "Vazir-Bold";
+$Vazir-Black: "Vazir-Black";
+$Vazir-Medium: "Vazir-Medium";
+$Vazir-Thin: "Vazir-Thin";
+
+$Sarbaz: "Sarbaz";
+
+$color_primary: #262626;
+$color__text-hover: #109d51;
+$color__primary-text: #ddfff1;
+$color__primary-footer: #00000000;
