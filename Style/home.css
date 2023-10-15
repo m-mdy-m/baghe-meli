@@ -179,6 +179,10 @@ body {
   text-decoration: none;
   color: white;
 }
+.navigation__language-link img {
+  width: 100%;
+  cursor: pointer;
+}
 .navigation__logo {
   flex: 1 1 30%;
   display: flex;
