@@ -27,6 +27,18 @@
 	src: url("../../fonts/Vazir-Thin.ttf");
 }
 
+@font-face {
+	font-family: "MAVIS";
+	src: url("../../fonts/MAVIS.otf");
+}
+@font-face {
+	font-family: "MAVISBold";
+	src: url("../../fonts/MAVISBold.woff");
+}
+@font-face {
+	font-family: "MAVISLight";
+	src: url("../../fonts/MAVISLight.ttf");
+}
 $Vazir: "Vazir";
 $Vazir-Light: "Vazir-Light";
 $Vazir-Bold: "Vazir-Bold";
@@ -36,7 +48,13 @@ $Vazir-Thin: "Vazir-Thin";
 
 $Sarbaz: "Sarbaz";
 
+
+$MAVIS: "MAVIS";
+$MAVISBold: "MAVISBold";
+$MAVISLight: "MAVISLight";
+
+
 $color_primary: #262626;
 $color__text-hover: #109d51;
-$color__primary-text: #ddfff1;
+$color__primary-text: #f7f7f7;
 $color__primary-footer: #00000000;
