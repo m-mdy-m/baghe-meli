@@ -33,6 +33,10 @@
 			align-items: center;
 			text-decoration: none;
 		}
+		&-DarkTheme{
+			width: 40px;
+			cursor: pointer;
+		}
 	}
 	&__search {
 		flex: 1 1 40%;
