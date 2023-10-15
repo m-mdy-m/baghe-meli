@@ -10,114 +10,83 @@
 	<body>
 		<div class="container">
 			<header class="header">
-				<div class="header__top">
-					<div class="header__language">
-						<a href="#" class="header__language-lang">Fa</a>
-						<a href="#" class="header__language-lang">Ar</a>
-						<a href="#" class="header__language-lang">En</a>
-						<a href="#" class="header__language-lang">Fr</a>
-					</div>
-					<div class="header__socialMedia">
-						<a href="#" class="header__socialMedia-link"
-							><img src="../icons/Email.svg" alt="Email"
-						/></a>
-						<a href="#" class="header__socialMedia-link"
-							><img src="../icons/Github.svg" alt="Github"
-						/></a>
-						<a href="#" class="header__socialMedia-link"
-							><img src="../icons/Telegram.svg" alt="Telegram"
-						/></a>
-						<a href="#" class="header__socialMedia-link"
-							><img src="../icons/Twiter.svg" alt="Twiter"
-						/></a>
-					</div>
-					<div class="header__search">
+				<nav class="navigation">
+					<div class="navigation__search">
 						<input
 							type="search"
-							class="header__search-input"
+							class="navigation__search-input"
 							placeholder="جستجو"
 							autofocus
 						/>
 						<img
 							src="../icons/Search.svg"
-							alt=""
-							class="header__search-icon"
+							alt="Search"
+							class="navigation__search-icon"
 						/>
 					</div>
-					<div class="header__logo">
-						<h3 class="header__logo-text">
+					<ul class="navigation__language">
+						<div class="navigation__language-option">
+							<li class="navigation__language-lang">
+								<a href="#" class="navigation__language-link">
+									<img src="../icons/internet.svg" alt="" />
+								</a>
+							</li>
+						</div>
+						<figure class="navigation__language-icon">
+							<img src="../icons/chevron_down.svg" alt="" />
+						</figure>
+					</ul>
+					<div class="navigation__icons">
+						<a href="#" class="navigation__icons-link">
+							<img
+								src="../icons/login.svg"
+								alt=""
+								class="navigation__icons-icon"
+							/>
+						</a>
+						<a href="#" class="navigation__icons-link">
+							<img
+								src="../icons/call.svg"
+								alt=""
+								class="navigation__icons-icon"
+							/>
+						</a>
+					</div>
+
+					<ul class="navigation__items">
+						<li class="navigation__items-item">
+							<a href="#">صفحه اصلی</a>
+						</li>
+						<li class="navigation__items-item">
+							<a href="#">اخبار</a>
+						</li>
+						<li class="navigation__items-item">
+							<a href="#">جشنواره ها</a>
+						</li>
+						<li class="navigation__items-item">
+							<a href="#">پژوهشکده</a>
+						</li>
+						<li class="navigation__items-item">
+							<a href="#">موزه</a>
+						</li>
+						<li class="navigation__items-item">
+							<a href="#">امکانات</a>
+						</li>
+						<li class="navigation__items-item">
+							<a href="#">درباره ما</a>
+						</li>
+					</ul>
+					<div class="navigation__logo">
+						<h3 class="navigation__logo-text">
 							باغ ملی شهرستان گنبدکاووس
 						</h3>
 						<img
 							src="../icons/Icon.png"
 							alt=""
-							class="header__logo-photo"
+							class="navigation__logo-photo"
 						/>
 					</div>
-				</div>
-				<div class="header__bottom">
-					<nav class="navigation">
-						<div class="navigation__search">
-							<input
-								type="search"
-								class="header__search-input"
-								placeholder="جستجو"
-							/>
-							<img
-								src="../icons/Search.svg"
-								alt="Search"
-								class="header__search-icon"
-							/>
-						</div>
-						<div class="navigation__icons">
-							<a href="#" class="navigation__icons-link">
-								<img
-									src="../icons/call.svg"
-									alt=""
-									class="navigation__icons-icon"
-								/>
-							</a>
-							<a href="#" class="navigation__icons-link">
-								<img
-									src="../icons/Buy.svg"
-									alt=""
-									class="navigation__icons-icon"
-								/>
-							</a>
-							<a href="#" class="navigation__icons-link">
-								<img
-									src="../icons/mobile.svg"
-									alt=""
-									class="navigation__icons-icon"
-								/>
-							</a>
-						</div>
-
-						<ul class="navigation__items">
-							<li class="navigation__items-item">
-								<a href="#">صفحه اصلی</a>
-							</li>
-							<li class="navigation__items-item">
-								<a href="#">اخبار</a>
-							</li>
-							<li class="navigation__items-item">
-								<a href="#">جشنواره ها</a>
-							</li>
-							<li class="navigation__items-item">
-								<a href="#">پژوهشکده</a>
-							</li>
-							<li class="navigation__items-item">
-								<a href="#">موزه</a>
-							</li>
-							<li class="navigation__items-item">
-								<a href="#">امکانات</a>
-							</li>
-							<li class="navigation__items-item">
-								<a href="#">درباره ما</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+				</nav>
 			</header>
 		</div>
 	</body>
