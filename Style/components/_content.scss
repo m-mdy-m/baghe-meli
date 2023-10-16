@@ -1,0 +1,31 @@
+.content {
+	width: 100%;
+	height: 100vh;
+	// background-color: red;
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		&-btn {
+			width: 200px;
+			height: 40px;
+			border-bottom-right-radius: 20px;
+			border-top-left-radius: 20px;
+			background-color: $color__BgBtn2;
+			margin: 0 20px;
+			cursor: pointer;
+			&:nth-child(2) {
+				background-color: $color__BgBtn;
+			}
+			&:hover {
+				background-color: $color__BgBtn;
+			}
+		}
+		&-link {
+			text-decoration: none;
+			color: $color_primary;
+			font-size: 18px;
+		}
+	}
+}

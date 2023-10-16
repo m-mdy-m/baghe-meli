@@ -50,6 +50,8 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #f8fbf5;
+  background-image: url("../../images/wave-haikei.svg");
+  background-size: cover;
   font-family: "Vazir";
   font-size: 62.5%;
 }
@@ -155,7 +157,7 @@ body {
   width: 130px;
   height: 30px;
   border-radius: 10px;
-  background-color: #0F8319;
+  background-color: #0f8319;
 }
 .introduction__slider-btn--link {
   text-decoration: none;
@@ -190,6 +192,37 @@ body {
   width: 100%;
 }
 
+.content {
+  width: 100%;
+  height: 100vh;
+}
+.content__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content__buttons-btn {
+  width: 200px;
+  height: 40px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #0c2808;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.content__buttons-btn:nth-child(2) {
+  background-color: #0f8319;
+}
+.content__buttons-btn:hover {
+  background-color: #0f8319;
+}
+.content__buttons-link {
+  text-decoration: none;
+  color: #f8fbf5;
+  font-size: 18px;
+}
+
 .header {
   width: 100%;
   height: auto;
@@ -200,7 +233,7 @@ body {
   padding: 0 8rem;
   top: 0;
   color: #243d20;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.768627451);
   z-index: 10000000000;
 }
 .header__top {
@@ -308,17 +341,27 @@ body {
   cursor: pointer;
 }
 .header__language-lists {
+  width: 20px;
+  top: 55px;
+  left: 2px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   position: absolute;
-  width: 50%;
-  padding: 5px;
-  transform: scaleY(0.1);
-  transform-origin: 100% 0%;
+  list-style: none;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: all 1s;
+  transform-origin: 50% 0%;
 }
 .header__language-list {
   list-style: none;
   text-transform: uppercase;
+}
+.header__language-list:hover {
+  transform: scale(1.2);
 }
 .header__logo {
   flex: 1 1 20%;
