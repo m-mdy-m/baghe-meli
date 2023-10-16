@@ -89,6 +89,7 @@
 		font-size: 20px;
 		align-items: center;
 		font-family: $MAVIS;
+		position: relative;
 		&-lang {
 			text-decoration: none;
 			color: $color__primary-text;
@@ -107,9 +108,24 @@
 		}
 		&-icon {
 			margin-left: 10px;
+			z-index: 2000;
 			img {
 				cursor: pointer;
 			}
+		}
+		&-lists{
+			display: flex;
+			flex-direction: column;
+			// background-color: red;
+			position: absolute;
+			width: 50%;
+			padding: 5px;
+			transform: scaleY(.1);
+			transform-origin: 100% 0%;
+		}
+		&-list{
+			list-style: none;
+			text-transform: uppercase;
 		}
 	}
 
