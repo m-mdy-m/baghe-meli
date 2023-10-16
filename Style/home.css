@@ -61,6 +61,135 @@ body {
   margin: 0 auto;
 }
 
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.introduction__slider {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overscroll-behavior-x: hidden;
+  overflow-wrap: normal;
+}
+.introduction__slider-item {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 15px;
+  align-items: flex-end;
+}
+.introduction__slider-item1 {
+  position: absolute;
+  top: 60%;
+  right: -40%;
+  width: 50%;
+  height: 10rem;
+}
+.introduction__slider-item2 {
+  width: 70%;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+.introduction__slider-item3 {
+  position: absolute;
+  top: 60%;
+  left: -40%;
+  width: 50%;
+  height: 10rem;
+}
+.introduction__slider-content {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to top, rgba(23, 59, 35, 0.4039215686), rgba(25, 65, 39, 0.4039215686), rgba(28, 72, 43, 0.4431372549), rgba(30, 78, 47, 0.1529411765), rgba(33, 85, 51, 0));
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.introduction__slider-title {
+  position: absolute;
+  left: 20px;
+  bottom: 120px;
+  color: #ffffff;
+  font-family: "Vazir-Bold";
+  font-size: 20px;
+}
+.introduction__slider-text {
+  position: absolute;
+  left: 20px;
+  bottom: 60px;
+  text-overflow: clip;
+  max-width: 30%;
+  word-spacing: normal;
+  overflow: hidden;
+  max-height: 40px;
+  line-height: 20px;
+  color: #ffffff;
+  font-family: "Vazir-Light";
+  font-size: 13px;
+}
+.introduction__slider-btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 130px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #0F8319;
+}
+.introduction__slider-btn--link {
+  text-decoration: none;
+  font-family: "Vazir-Bold";
+  color: #ffffff;
+}
+.introduction__slider-photo {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.introduction__slider-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  border: none;
+  outline: none;
+  z-index: 2000000000000000;
+  top: 50%;
+}
+.introduction__slider-button {
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.introduction__slider-icon {
+  cursor: pointer;
+  width: 100%;
+}
+
 .header {
   width: 100%;
   height: auto;
@@ -72,6 +201,7 @@ body {
   top: 0;
   color: #243d20;
   background-color: #ffffff;
+  z-index: 10000000000;
 }
 .header__top {
   flex: 1 1 60%;
@@ -188,7 +318,7 @@ body {
   top: 0;
   width: 100%;
   height: 3px;
-  background-color: #109d51;
+  background-color: #64a507;
 }
 .header__logo-photo {
   flex-basis: 20%;
@@ -229,8 +359,8 @@ body {
   color: #243d20;
 }
 .navigation__items-item a:hover {
-  color: #109d51;
+  color: #64a507;
 }
 .navigation__items-item:first-child a {
-  color: #109d51;
+  color: #64a507;
 }/*# sourceMappingURL=home.css.map */

@@ -9,6 +9,7 @@
 	top: 0;
 	color: $color__header-text;
 	background-color: $color__header;
+	z-index: 10000000000;
 	&__top {
 		flex: 1 1 60%;
 		width: 100%;

@@ -1,0 +1,131 @@
+.introduction {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	&__slider {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		overflow-x: hidden;
+		overscroll-behavior-x: hidden;
+        overflow-wrap: normal;
+		&-item {
+			position: relative;
+			width: 100%;
+			height: 20rem;
+			display: flex;
+			justify-content: center;
+			margin: 0 15px;
+			align-items: flex-end;
+		}
+		&-item1 {
+			position: absolute;
+			top: 60%;
+			right: -40%;
+			width: 50%;
+			height: 10rem;
+		}
+		&-item2 {
+			width: 70%;
+			position: absolute;
+			top: 68%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 20;
+		}
+		&-item3 {
+			position: absolute;
+			top: 60%;
+			left: -40%;
+			width: 50%;
+			height: 10rem;
+		}
+		&-content {
+			display: flex;
+			flex-direction: column;
+			background-image: linear-gradient(
+				to top,
+				#173b2367,
+				#19412767,
+				#1c482b71,
+				#1e4e2f27,
+				#21553300
+			);
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			width: 100%;
+			height: 100%;
+			bottom: 0;
+			position: absolute;
+		}
+		&-title {
+			position: absolute;
+			left: 20px;
+			bottom: 120px;
+			color: $color__text;
+			font-family: $Vazir-Bold;
+			font-size: 20px;
+		}
+		&-text {
+			position: absolute;
+			left: 20px;
+			bottom: 60px;
+			text-overflow: clip;
+			max-width: 30%;
+			word-spacing: normal;
+			overflow: hidden;
+			max-height: 40px;
+			line-height: 20px;
+			color: $color__text;
+			font-family: $Vazir-Light;
+			font-size: 13px;
+		}
+		&-btn {
+			position: absolute;
+			left: 20px;
+			bottom: 20px;
+			width: 130px;
+			height: 30px;
+			border-radius: 10px;
+			background-color: $color__BgBtn;
+			&--link {
+				text-decoration: none;
+				font-family: $Vazir-Bold;
+				color: $color__text;
+			}
+		}
+		&-photo {
+			border-radius: 10px;
+			width: 100%;
+			height: auto;
+		}
+
+		&-buttons {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			position: absolute;
+			border: none;
+			outline: none;
+			z-index: 2000000000000000;
+			top: 50%;
+		}
+		&-button {
+			background-color: #fff;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 10px;
+		}
+		&-icon {
+			cursor: pointer;
+			width: 100%;
+		}
+	}
+}
