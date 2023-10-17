@@ -7,61 +7,26 @@
 	height: 100vh;
 	&__slider {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		position: relative;
 		width: 100%;
 		height: 100vh;
 		overflow-x: hidden;
 		overscroll-behavior-x: hidden;
 		overflow-wrap: normal;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: nowrap;
 		&-item {
-			position: relative;
-			width: 100%;
-			height: 20rem;
 			display: flex;
 			justify-content: center;
-			margin: 0 15px;
 			align-items: flex-end;
-		}
-		&-item1 {
 			position: absolute;
-			top: 60%;
-			right: -40%;
-			width: 50%;
-			height: 10rem;
-		}
-		&-item2 {
-			width: 70%;
-			position: absolute;
-			top: 68%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			z-index: 20;
-		}
-		&-item3 {
-			position: absolute;
-			top: 60%;
-			left: -40%;
-			width: 50%;
-			height: 10rem;
-		}
-		&-content {
-			display: flex;
-			flex-direction: column;
-			background-image: linear-gradient(
-				to top,
-				#173b2367,
-				#19412767,
-				#1c482b71,
-				#1e4e2f27,
-				#21553300
-			);
-			border-bottom-left-radius: 20px;
-			border-bottom-right-radius: 20px;
-			width: 100%;
-			height: 100%;
-			bottom: 0;
-			position: absolute;
+			inset: 0 0 23px 0;
+			margin: auto;
+			width: 75%;
+			height: auto;
+			z-index: 200;
 		}
 		&-title {
 			position: absolute;
@@ -106,6 +71,7 @@
 		&-photo {
 			border-radius: 10px;
 			width: 100%;
+			box-shadow: 2px 7px 10px 0px black;
 			height: auto;
 		}
 		&-buttons {
