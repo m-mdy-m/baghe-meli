@@ -36,10 +36,11 @@ body {
 		font-size: 62.5%;
 	}
 	@include respond(tab-land) {
-		font-size: 72.5%;
+		font-size: 70%;
+		overflow-x: hidden;
 	}
 	@include respond(big-desktop) {
-		font-size: 87%;
+		font-size: 85%;
 	}
 }
 .container {

@@ -46,8 +46,8 @@
 		display: flex;
 		padding-top: 10px;
 		justify-content: center;
-		align-items: center;
 		position: relative;
+		align-items: center;
 		&-input {
 			direction: rtl;
 			border: none;
@@ -63,6 +63,8 @@
 			@include respond(tab-port) {
 			}
 			@include respond(tab-land) {
+				padding-right: 40px;
+				font-size: 25px;
 			}
 			@include respond(big-desktop) {
 				padding-right: 55px;
@@ -72,6 +74,9 @@
 				-webkit-appearance: none;
 				font-size: 25px;
 				color: #000;
+				@include respond(tab-land) {
+					font-size: 30px;
+				}
 				@include respond(big-desktop) {
 					font-size: 35px;
 				}
@@ -91,6 +96,9 @@
 		&-icon {
 			position: absolute;
 			width: 20px;
+			@include respond(tab-land) {
+				width: 30px;
+			}
 			@include respond(big-desktop) {
 				width: 40px;
 			}
@@ -135,6 +143,9 @@
 		}
 		&-lists {
 			width: 20px;
+			@include respond(tab-land) {
+				width: 30px;
+			}
 			@include respond(big-desktop) {
 				width: 40px;
 			}
@@ -175,6 +186,9 @@
 			width: 100%;
 			height: 3px;
 			background-color: $color__text-hover;
+			@include respond(tab-land) {
+				height: 2px;
+			}
 			@include respond(big-desktop) {
 				height: 4px;
 			}
@@ -197,10 +211,11 @@
 				font-size: 62.5%;
 			}
 			@include respond(tab-land) {
-				font-size: 72.5%;
+				font-size: 15px;
+				font-family: $Vazir-Light;
 			}
 			@include respond(big-desktop) {
-				font-size: 20px;
+				font-size: 25px;
 			}
 		}
 	}

@@ -31,6 +31,7 @@
 			@include respond(tab-port) {
 			}
 			@include respond(tab-land) {
+				font-size: 25px;
 			}
 			@include respond(big-desktop) {
 				font-size: 25px;
@@ -54,6 +55,7 @@
 			@include respond(tab-port) {
 			}
 			@include respond(tab-land) {
+				font-size: 23px;
 			}
 			@include respond(big-desktop) {
 				font-size: 23px;
@@ -61,6 +63,10 @@
 		}
 		&-img {
 			width: 15px;
+			@include respond(tab-land) {
+				width: 25px;
+
+			}
 		}
 	}
 }

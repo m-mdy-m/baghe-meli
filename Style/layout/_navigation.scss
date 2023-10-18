@@ -14,10 +14,10 @@
 		@include respond(tab-port) {
 		}
 		@include respond(tab-land) {
+			font-size: 20px;
 		}
 		@include respond(big-desktop) {
 			font-size: 24px;
-
 		}
 		&-item {
 			padding: 10px;
