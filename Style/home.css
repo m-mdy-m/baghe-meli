@@ -38,6 +38,14 @@
   font-family: "MAVISLight";
   src: url("../../fonts/MAVISLight.ttf");
 }
+@keyframes lineMartyrs {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   padding: 0;
   border: none;
@@ -231,10 +239,10 @@ body {
   align-items: center;
 }
 .martyrs__lists {
-  display: block;
-  justify-self: center;
-  align-self: center;
+  display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   text-decoration: none;
   font-size: 25px;
@@ -250,10 +258,13 @@ body {
 .martyrs__lists::before {
   content: "";
   position: absolute;
-  bottom: 0;
   transform-origin: bottom;
-  width: 100%;
-  background-color: red;
+  width: 50%;
+  height: 3px;
+  bottom: -10px;
+  transform: scale(0.1);
+  animation: lineMartyrs 2s infinite;
+  background-color: #edf8ea;
 }
 
 .martyr {
@@ -264,6 +275,11 @@ body {
   margin: 3rem 15px 0;
   max-width: 255px;
   min-width: 255px;
+}
+.martyr:hover {
+  transition: all 1s;
+  transform: scale(1.1);
+  filter: contrast(1.4);
 }
 .martyr__img {
   overflow-clip-margin: content-box;
@@ -286,9 +302,28 @@ body {
 .martyr__textBox-title {
   font-size: 20px;
   color: #262626;
+  cursor: default;
 }
 .martyr__textBox-text {
   margin-right: 5px;
+}
+.martyr__textBox-text a {
+  text-decoration: none;
+  color: #243d20;
+  position: relative;
+  font-family: "Vazir-Bold";
+}
+.martyr__textBox-text a::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  border-radius: 50%;
+  width: 100%;
+  background-color: #243d20;
+  height: 1px;
+}
+.martyr__textBox-text a:hover {
+  color: #64a507;
 }
 
 .introduction {
