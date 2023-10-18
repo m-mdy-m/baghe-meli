@@ -63,6 +63,21 @@ body {
   font-family: "Vazir";
   font-size: 62.5%;
 }
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(13, 148, 211, 0.631372549);
+  border-radius: 16px;
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+body::-webkit-scrollbar-track-piece {
+  opacity: 0;
+}
 
 .container {
   width: 100%;
