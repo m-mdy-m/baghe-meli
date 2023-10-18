@@ -1,5 +1,6 @@
 .footer {
 	width: 100%;
+	height: auto;
 	text-align: center;
 	background-image: linear-gradient(
 		to left,
@@ -26,14 +27,12 @@
 }
 .contact {
 	display: grid;
-	grid-template-columns: 20% 60% 20%;
+	grid-template-columns: 20% 40% 40%;
 	background: url("../../icons/circle-scatter-haikei.svg") no-repeat;
 	background-size: cover;
-	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
-	border-radius: 20px;
 	width: 100%;
 	justify-items: center;
 	align-items: center;
