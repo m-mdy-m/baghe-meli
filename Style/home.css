@@ -79,6 +79,26 @@ body::-webkit-scrollbar-thumb:hover {
 body::-webkit-scrollbar-track-piece {
   opacity: 0;
 }
+@media (max-width: 600px) {
+  body {
+    font-size: 100%;
+  }
+}
+@media (max-width: 900px) and (min-width: 601px) {
+  body {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 1300px) and (min-width: 901px) {
+  body {
+    font-size: 72.5%;
+  }
+}
+@media (min-width: 1301px) {
+  body {
+    font-size: 87%;
+  }
+}
 
 .container {
   width: 100%;
@@ -612,6 +632,11 @@ body::-webkit-scrollbar-track-piece {
   border: none;
   outline: none;
   color: #262626;
+}
+@media (min-width: 1301px) {
+  .social__send-email {
+    font-size: 20px;
+  }
 }
 .social__media {
   margin-top: 2rem;

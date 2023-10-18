@@ -4,14 +4,7 @@
 	padding: 0 8rem;
 	margin: 6rem auto 0;
 	text-align: center;
-	@include respond(phone) {
-	}
-	@include respond(tab-port) {
-	}
-	@include respond(tab-land) {
-	}
-	@include respond(big-desktop) {
-	}
+	
 	&__header {
 		display: flex;
 		justify-content: space-between;
