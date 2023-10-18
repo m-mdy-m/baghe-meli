@@ -9,6 +9,16 @@
 		align-items: center;
 		width: 100%;
 		font-size: 14px;
+		@include respond(phone) {
+		}
+		@include respond(tab-port) {
+		}
+		@include respond(tab-land) {
+		}
+		@include respond(big-desktop) {
+			font-size: 24px;
+
+		}
 		&-item {
 			padding: 10px;
 			list-style: none;

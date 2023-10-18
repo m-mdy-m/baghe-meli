@@ -67,18 +67,6 @@
 			border: none;
 			outline: none;
 			color: $color__primary-text;
-			@include respond(phone) {
-				
-			}
-			@include respond(tab-port) {
-				
-			}
-			@include respond(tab-land) {
-				
-			}
-			@include respond(big-desktop) {
-				font-size: 20px;
-			}
 		}
 	}
 	&__media {
@@ -145,6 +133,15 @@
 	&__address {
 		font-size: 16px;
 		margin-right: 10px;
+		@include respond(phone) {
+		}
+		@include respond(tab-port) {
+		}
+		@include respond(tab-land) {
+		}
+		@include respond(big-desktop) {
+			font-size: 25px;
+		}
 	}
 	&__box {
 		display: flex;

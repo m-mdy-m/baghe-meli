@@ -30,6 +30,15 @@
 			color: $color__text;
 			font-family: $Vazir-Bold;
 			font-size: 20px;
+			@include respond(phone) {
+			}
+			@include respond(tab-port) {
+			}
+			@include respond(tab-land) {
+			}
+			@include respond(big-desktop) {
+				font-size: 35px;
+			}
 		}
 		&-text {
 			position: absolute;
@@ -44,6 +53,18 @@
 			color: $color__text;
 			font-family: $Vazir-Light;
 			font-size: 13px;
+			@include respond(phone) {
+			}
+			@include respond(tab-port) {
+			}
+			@include respond(tab-land) {
+			}
+			@include respond(big-desktop) {
+				line-height: 25px;
+				max-height: 50px;
+				bottom: 70px;
+				font-size: 25px;
+			}
 		}
 		&-btn {
 			position: absolute;
@@ -54,13 +75,27 @@
 			border-radius: 10px;
 			background-color: $color__BgBtn;
 			cursor: pointer;
-			&--link {
+			a {
 				text-decoration: none;
 				font-family: $Vazir-Bold;
 				color: $color__text;
+				
 			}
 			&:hover {
 				background-color: $color__btn-hover;
+			}
+			@include respond(phone) {
+			}
+			@include respond(tab-port) {
+			}
+			@include respond(tab-land) {
+			}
+			@include respond(big-desktop) {
+				left: 20px;
+				bottom: 20px;
+				width: 150px;
+					font-size: 16px;
+					height: 40px;
 			}
 		}
 		&-photo {

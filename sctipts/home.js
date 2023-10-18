@@ -43,7 +43,6 @@ sliderNewsImages.forEach(images => {
 });
 // ;
 // slider
-
 let Slider = document.querySelector(".introduction__slider");
 let SliderImages = document.querySelectorAll(".introduction__slider-photo");
 let sliderItem = document.querySelectorAll(".introduction__slider-item");
@@ -63,3 +62,4 @@ function autoChange() {
 	sliderItem[index - 1].style.opacity = "1";
 }
 autoChange();
+console.log(window.innerHeight);

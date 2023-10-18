@@ -26,6 +26,15 @@
 			text-decoration: none;
 			color: $color_primary;
 			font-size: 18px;
+			@include respond(phone) {
+			}
+			@include respond(tab-port) {
+			}
+			@include respond(tab-land) {
+			}
+			@include respond(big-desktop) {
+				font-size: 25px;
+			}
 		}
 	}
 	&__news {
@@ -39,6 +48,15 @@
 			font-size: 16px;
 			&:hover {
 				color: $color__text-hover;
+			}
+			@include respond(phone) {
+			}
+			@include respond(tab-port) {
+			}
+			@include respond(tab-land) {
+			}
+			@include respond(big-desktop) {
+				font-size: 23px;
 			}
 		}
 		&-img {

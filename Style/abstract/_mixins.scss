@@ -10,12 +10,12 @@
 		}
 	}
 	@if $breakpoint == tab-land {
-		@media (max-width: 1300px) and (min-width: 901px) {
+		@media (max-width: 1366px) and (min-width: 901px) {
 			@content; //1200px
 		}
 	}
 	@if $breakpoint == big-desktop {
-		@media (min-width: 1301px) {
+		@media (min-width: 1366px) {
 			@content; //1800px
 		}
 	}

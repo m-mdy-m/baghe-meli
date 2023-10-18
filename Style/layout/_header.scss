@@ -24,6 +24,7 @@
 		align-items: center;
 		&-icon {
 			width: 40px;
+
 			&:hover {
 				transform: translateY(-2px);
 				transition: all 0.2s;
@@ -57,10 +58,23 @@
 			font-size: 20px;
 			padding-right: 30px;
 			width: 100%;
+			@include respond(phone) {
+			}
+			@include respond(tab-port) {
+			}
+			@include respond(tab-land) {
+			}
+			@include respond(big-desktop) {
+				padding-right: 55px;
+				font-size: 30px;
+			}
 			&::-webkit-input-placeholder {
 				-webkit-appearance: none;
 				font-size: 25px;
 				color: #000;
+				@include respond(big-desktop) {
+					font-size: 35px;
+				}
 			}
 			background-color: $color-header-input;
 			&::-webkit-search-cancel-button {
@@ -77,6 +91,9 @@
 		&-icon {
 			position: absolute;
 			width: 20px;
+			@include respond(big-desktop) {
+				width: 40px;
+			}
 			right: 0;
 			margin-right: 5px;
 			cursor: pointer;
@@ -89,10 +106,10 @@
 		margin: 0 10px;
 		display: flex;
 		justify-content: flex-start;
-		font-size: 20px;
 		align-items: center;
 		font-family: $MAVIS;
 		position: relative;
+
 		&-lang {
 			text-decoration: none;
 			color: $color__primary-text;
@@ -118,6 +135,9 @@
 		}
 		&-lists {
 			width: 20px;
+			@include respond(big-desktop) {
+				width: 40px;
+			}
 			top: 55px;
 			left: 2px;
 			display: flex;
@@ -155,6 +175,9 @@
 			width: 100%;
 			height: 3px;
 			background-color: $color__text-hover;
+			@include respond(big-desktop) {
+				height: 4px;
+			}
 		}
 		&-photo {
 			flex-basis: 20%;
@@ -167,6 +190,18 @@
 			font-family: $Sarbaz;
 			flex-basis: 80%;
 			font-size: 15px;
+			@include respond(phone) {
+				font-size: 100%;
+			}
+			@include respond(tab-port) {
+				font-size: 62.5%;
+			}
+			@include respond(tab-land) {
+				font-size: 72.5%;
+			}
+			@include respond(big-desktop) {
+				font-size: 20px;
+			}
 		}
 	}
 	&__bottom {
