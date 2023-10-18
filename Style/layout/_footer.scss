@@ -1,6 +1,5 @@
 .footer {
 	width: 100%;
-	height: 40vh;
 	text-align: center;
 	background-image: linear-gradient(
 		to left,
@@ -17,17 +16,17 @@
 		#f8fbf5,
 		#f8fbf5
 	);
-	padding: 0 8rem;
+	margin: auto;
 	&__wrapper {
 		width: 100%;
-		height: 40vh;
-		display: grid;
-		grid-template-rows: 80% 20%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
 .contact {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr) 40%;
+	grid-template-columns: 20% 60% 20%;
 	background: url("../../icons/circle-scatter-haikei.svg") no-repeat;
 	background-size: cover;
 	border-radius: 16px;
@@ -35,6 +34,9 @@
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 	border-radius: 20px;
+	width: 100%;
+	justify-items: center;
+	align-items: center;
 }
 .social {
 	display: flex;
@@ -62,7 +64,7 @@
 			height: 40px;
 			border-radius: 10px;
 			padding-right: 40px;
-			font-size: 20px;
+			font-size: 16px;
 			border: none;
 			outline: none;
 			color: $color__primary-text;
@@ -93,24 +95,25 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 	&__wrapper {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: space-around;
 		align-items: center;
-		flex-direction: column;
 		background-color: $color__bgLogoContent-hover;
-		max-width: 300px;
-		min-width: 300px;
+		width: 100%;
 		border-radius: 10px;
 	}
 	&__icon {
-		max-width: 100px;
-		min-width: 100px;
+		flex-basis: 20%;
+		width: 100px;
 	}
 	&__texts {
+		flex-basis: 60%;
 		display: flex;
 		flex-direction: column;
 		direction: rtl;
+		align-items: flex-start;
 		&-text {
 			font-size: 20px;
 			font-size: $Vazir-Bold;

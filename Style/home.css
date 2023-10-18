@@ -204,7 +204,7 @@ body::-webkit-scrollbar-track-piece {
   width: 100%;
   height: 90vh;
   padding: 0 8rem;
-  margin: 6rem auto;
+  margin: 6rem auto 0;
   text-align: center;
 }
 .martyrs__header {
@@ -256,22 +256,22 @@ body::-webkit-scrollbar-track-piece {
 }
 .martyrs__lists {
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
-  width: auto;
+  height: 7rem;
+}
+.martyrs__lists-link {
   text-decoration: none;
   font-size: 25px;
-  margin-top: 5rem;
   color: #262626;
   position: relative;
 }
-.martyrs__lists:hover {
+.martyrs__lists-link:hover {
   transition: all 2s;
   color: #64a507;
   transform: translateY(-10px);
 }
-.martyrs__lists::before {
+.martyrs__lists-link::before {
   content: "";
   position: absolute;
   transform-origin: bottom;
@@ -502,7 +502,7 @@ body::-webkit-scrollbar-track-piece {
 .content {
   width: 100%;
   height: auto;
-  margin: 3rem 0px;
+  margin: 3rem 0px 0;
 }
 .content__buttons {
   display: flex;
@@ -555,21 +555,20 @@ body::-webkit-scrollbar-track-piece {
 
 .footer {
   width: 100%;
-  height: 40vh;
   text-align: center;
   background-image: linear-gradient(to left, #edf8ea, #eff8ec, #f2f9ee, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5);
-  padding: 0 8rem;
+  margin: auto;
 }
 .footer__wrapper {
   width: 100%;
-  height: 40vh;
-  display: grid;
-  grid-template-rows: 80% 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact {
   display: grid;
-  grid-template-columns: repeat(2, 1fr) 40%;
+  grid-template-columns: 20% 60% 20%;
   background: url("../../icons/circle-scatter-haikei.svg") no-repeat;
   background-size: cover;
   border-radius: 16px;
@@ -577,6 +576,9 @@ body::-webkit-scrollbar-track-piece {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 20px;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
 }
 
 .social {
@@ -607,7 +609,7 @@ body::-webkit-scrollbar-track-piece {
   height: 40px;
   border-radius: 10px;
   padding-right: 40px;
-  font-size: 20px;
+  font-size: 16px;
   border: none;
   outline: none;
   color: #262626;
@@ -637,25 +639,26 @@ body::-webkit-scrollbar-track-piece {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .address__wrapper {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
   background-color: rgba(232, 231, 231, 0.6901960784);
-  max-width: 300px;
-  min-width: 300px;
+  width: 100%;
   border-radius: 10px;
 }
 .address__icon {
-  max-width: 100px;
-  min-width: 100px;
+  flex-basis: 20%;
+  width: 100px;
 }
 .address__texts {
+  flex-basis: 60%;
   display: flex;
   flex-direction: column;
   direction: rtl;
+  align-items: flex-start;
 }
 .address__texts-text {
   font-size: 20px;
