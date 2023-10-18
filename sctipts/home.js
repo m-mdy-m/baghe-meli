@@ -50,7 +50,7 @@ let sliderItem = document.querySelectorAll(".introduction__slider-item");
 
 let index = 0;
 function autoChange() {
-	setTimeout(autoChange, 2000);
+	setTimeout(autoChange, 5000);
 	var pic;
 	for (pic = 0; pic < sliderItem.length; pic++) {
 		sliderItem[pic].style.opacity = "0";

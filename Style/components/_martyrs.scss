@@ -3,6 +3,7 @@
 	height: 90vh;
 	padding: 0 8rem;
 	margin: 6rem auto;
+	text-align: center;
 	&__header {
 		display: flex;
 		justify-content: space-between;
@@ -55,7 +56,7 @@
 		text-align: center;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
+		width: auto;
 		text-decoration: none;
 		font-size: 25px;
 		margin-top: 5rem;
@@ -90,7 +91,7 @@
 	&:hover {
 		transition: all 1s;
 		transform: scale(1.1);
-        filter: contrast(1.4);
+		filter: contrast(1.4);
 	}
 	&__img {
 		overflow-clip-margin: content-box;
