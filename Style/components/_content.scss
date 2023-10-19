@@ -7,6 +7,9 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		@include respond(tab-port) {
+			margin-bottom: 20px;
+		}
 		&-btn {
 			width: 200px;
 			height: 40px;
@@ -29,6 +32,7 @@
 			@include respond(phone) {
 			}
 			@include respond(tab-port) {
+				font-size: 20px;
 			}
 			@include respond(tab-land) {
 				font-size: 25px;
@@ -53,6 +57,7 @@
 			@include respond(phone) {
 			}
 			@include respond(tab-port) {
+				font-size: 18px;
 			}
 			@include respond(tab-land) {
 				font-size: 23px;
@@ -64,8 +69,10 @@
 		&-img {
 			width: 15px;
 			@include respond(tab-land) {
+				width: 20px;
+			}
+			@include respond(tab-land) {
 				width: 25px;
-
 			}
 		}
 	}

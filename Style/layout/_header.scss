@@ -48,6 +48,9 @@
 		justify-content: center;
 		position: relative;
 		align-items: center;
+		@include respond(tab-port) {
+			flex: 1 1 50%;
+		}
 		&-input {
 			direction: rtl;
 			border: none;
@@ -61,6 +64,10 @@
 			@include respond(phone) {
 			}
 			@include respond(tab-port) {
+				padding-right: 30px;
+				height: 30px;
+				border-radius: 5px;
+				font-size: 15px;
 			}
 			@include respond(tab-land) {
 				padding-right: 40px;
@@ -74,6 +81,13 @@
 				-webkit-appearance: none;
 				font-size: 25px;
 				color: #000;
+				@include respond(phone) {
+					font-size: 100%;
+				}
+				@include respond(tab-port) {
+					font-size: 20px;
+					transform-origin: right;
+				}
 				@include respond(tab-land) {
 					font-size: 30px;
 				}
@@ -96,6 +110,12 @@
 		&-icon {
 			position: absolute;
 			width: 20px;
+			@include respond(phone) {
+				font-size: 100%;
+			}
+			@include respond(tab-port) {
+				width: 20px;
+			}
 			@include respond(tab-land) {
 				width: 30px;
 			}
@@ -118,6 +138,15 @@
 		font-family: $MAVIS;
 		position: relative;
 
+		@include respond(tab-port) {
+			margin: 0 5px;
+			flex: 1 1 10%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
 		&-lang {
 			text-decoration: none;
 			color: $color__primary-text;
@@ -125,6 +154,7 @@
 		&-option {
 			display: flex;
 			flex-direction: column;
+			width: 100%;
 		}
 		&-link {
 			text-decoration: none;
@@ -137,12 +167,22 @@
 		&-icon {
 			margin-left: 10px;
 			z-index: 2000;
+			@include respond(tab-port) {
+				margin-left: 0px;
+				z-index: 2;
+				opacity: 0;
+				position: absolute;
+			}
 			img {
+				width: 20px;
 				cursor: pointer;
 			}
 		}
 		&-lists {
 			width: 20px;
+			@include respond(tab-port) {
+				width: 20px;
+			}
 			@include respond(tab-land) {
 				width: 30px;
 			}
@@ -179,6 +219,9 @@
 		align-items: center;
 		position: relative;
 		padding-top: 4px;
+		@include respond(tab-port) {
+			flex-direction: column;
+		}
 		&::before {
 			content: "";
 			position: absolute;
@@ -186,6 +229,12 @@
 			width: 100%;
 			height: 3px;
 			background-color: $color__text-hover;
+			@include respond(phone) {
+				font-size: 100%;
+			}
+			@include respond(tab-port) {
+				height: 1px;
+			}
 			@include respond(tab-land) {
 				height: 2px;
 			}
@@ -208,7 +257,12 @@
 				font-size: 100%;
 			}
 			@include respond(tab-port) {
-				font-size: 62.5%;
+				font-size: 12px;
+				max-height: 15px;
+				flex-basis: 25%;
+				overflow: hidden;
+				width: 100%;
+				font-family: $Vazir-Light;
 			}
 			@include respond(tab-land) {
 				font-size: 15px;
