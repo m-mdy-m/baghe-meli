@@ -120,15 +120,12 @@
 				content: "";
 				position: absolute;
 				transform-origin: bottom;
-				width: 50%;
 				height: 3px;
 				bottom: -10px;
 				transform: scale(0.1);
 				animation: lineMartyrs 2s infinite;
 				background-color: $color-header-input;
-				@include respond(tab-port) {
 					width: 100%;
-				}
 			}
 		}
 	}

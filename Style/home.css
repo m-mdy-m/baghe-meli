@@ -63,6 +63,7 @@ body {
   background-size: cover;
   font-family: "Vazir";
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   width: 7px;
@@ -459,17 +460,12 @@ body::-webkit-scrollbar-track-piece {
   content: "";
   position: absolute;
   transform-origin: bottom;
-  width: 50%;
   height: 3px;
   bottom: -10px;
   transform: scale(0.1);
   animation: lineMartyrs 2s infinite;
   background-color: #edf8ea;
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .martyrs__lists-link::before {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .martyr {
@@ -1122,6 +1118,11 @@ body::-webkit-scrollbar-track-piece {
   background-color: rgba(255, 255, 255, 0.9725490196);
   z-index: 10000000000;
 }
+@media (max-width: 900px) and (min-width: 601px) {
+  .header {
+    padding: 0 4rem;
+  }
+}
 .header__top {
   flex: 1 1 60%;
   width: 100%;
@@ -1290,6 +1291,8 @@ body::-webkit-scrollbar-track-piece {
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .header__language-link {
   text-decoration: none;
@@ -1298,6 +1301,11 @@ body::-webkit-scrollbar-track-piece {
 .header__language-link img {
   width: 100%;
   cursor: pointer;
+}
+@media (max-width: 900px) and (min-width: 601px) {
+  .header__language-link img {
+    width: 100%;
+  }
 }
 .header__language-icon {
   margin-left: 10px;
@@ -1455,7 +1463,7 @@ body::-webkit-scrollbar-track-piece {
 }
 @media (max-width: 900px) and (min-width: 601px) {
   .navigation__items {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media (max-width: 1100px) and (min-width: 901px) {
