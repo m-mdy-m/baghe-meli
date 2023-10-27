@@ -50,6 +50,9 @@ body {
 	height: auto;
 	padding: 0 15px;
 	margin: 0 auto;
+	@include respond(phone) {
+		padding: 0 5px;
+	}
 }
 .main {
 	min-height: 100vh;

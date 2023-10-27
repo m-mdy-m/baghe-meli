@@ -37,8 +37,11 @@
 	width: 100%;
 	justify-items: center;
 	align-items: center;
+	@include respond(phone) {
+		grid-template-columns: 40% 40% 20%;
+	}
 	@include respond(tab-port) {
-		grid-template-columns: 30% 35% 35%;
+		grid-template-columns: 20% 50% 30%;
 	}
 }
 .social {
@@ -60,6 +63,7 @@
 			position: absolute;
 			right: 5px;
 			@include respond(phone) {
+				width: 15px;
 			}
 			@include respond(tab-port) {
 				width: 15px;
@@ -85,7 +89,14 @@
 			position: relative;
 			color: $color__primary-text;
 			@include respond(phone) {
-				font-size: 100%;
+				font-size: 20px;
+				padding-right: 20px;
+				height: 30px;
+				&::placeholder {
+					transform: scale(0.3);
+					transform-origin: right;
+					float: right;
+				}
 			}
 			@include respond(tab-port) {
 				font-size: 20px;
@@ -118,6 +129,10 @@
 			align-items: center;
 			justify-content: center;
 			width: 30px;
+			@include respond(phone) {
+				width: 20px;
+				margin-right: 7px;
+			}
 			@include respond(tab-port) {
 				width: 40px;
 			}
@@ -145,6 +160,10 @@
 		background-color: $color__bgLogoContent-hover;
 		width: 100%;
 		border-radius: 10px;
+		@include respond(phone) {
+			border-radius: 0px;
+			height: 100%;
+		}
 		@include respond(tab-port) {
 			height: 100%;
 		}
@@ -152,6 +171,9 @@
 	&__icon {
 		flex-basis: 20%;
 		width: 100px;
+		@include respond(phone) {
+			flex-basis: 10%;
+		}
 		@include respond(tab-port) {
 			flex-basis: 30%;
 		}
@@ -162,12 +184,18 @@
 		flex-direction: column;
 		direction: rtl;
 		align-items: flex-start;
+		@include respond(phone) {
+			flex-basis: 90%;
+		}
 		@include respond(tab-port) {
 			flex-basis: 70%;
 		}
 		&-text {
 			font-size: 20px;
 			font-size: $Vazir-Bold;
+			@include respond(phone) {
+				font-size: 10px;
+			}
 			@include respond(tab-port) {
 				font-size: 16px;
 			}
@@ -180,15 +208,19 @@
 	display: flex;
 	max-width: 100%;
 	min-width: 100%;
-	margin: 0px 0px 0px 0px;
+	margin: 0px;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
 	cursor: default;
+	@include respond(phone) {
+		height: 100%;
+	}
 	&__address {
 		font-size: 16px;
 		margin-right: 10px;
 		@include respond(phone) {
+			font-size: 5px;
 		}
 		@include respond(tab-port) {
 			font-size: 11px;
@@ -200,12 +232,17 @@
 			font-size: 25px;
 		}
 	}
+	img {
+		@include respond(phone) {
+			width: 15px;
+		}
+	}
 	&__box {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		background-color: $color__bgLogoContent-hover;
-		width: 70%;
+		width: 100%;
 		height: 40px;
 		border-radius: 10px;
 	}

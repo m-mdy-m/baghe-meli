@@ -12,6 +12,7 @@
 		width: 100%;
 		font-size: 14px;
 		@include respond(phone) {
+			font-size: 11px;
 		}
 		@include respond(tab-port) {
 			font-size: 16px;
@@ -25,9 +26,12 @@
 		&-item {
 			padding: 10px;
 			list-style: none;
+			@include respond(phone) {
+				padding: 2px;
+
+			}
 			@include respond(tab-port) {
 				padding: 5px;
-
 			}
 			a {
 				text-decoration: none;

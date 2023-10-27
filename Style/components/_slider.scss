@@ -17,6 +17,12 @@
 		justify-content: center;
 		flex-wrap: nowrap;
 		border-radius: 10px;
+		@include respond(phone) {
+			width: 100%;
+			margin: auto 0;
+			height: 100vh;
+			overflow: hidden;
+		}
 		&-item {
 			display: flex;
 			justify-content: center;
@@ -24,6 +30,9 @@
 			position: absolute;
 			inset: 0 0 0 0;
 			margin: auto;
+			@include respond(phone) {
+				align-items: flex-start;
+			}
 		}
 		&-title {
 			position: absolute;
@@ -33,9 +42,11 @@
 			font-family: $Vazir-Bold;
 			font-size: 20px;
 			@include respond(phone) {
+				bottom: 30%;
+				font-size: 25px;
 			}
 			@include respond(tab-port) {
-				font-size: 25x;
+				font-size: 25px;
 			}
 			@include respond(tab-land) {
 				font-size: 28px;
@@ -58,6 +69,12 @@
 			font-family: $Vazir-Light;
 			font-size: 13px;
 			@include respond(phone) {
+				line-height: 35px;
+				max-width: 60%;
+				left: 20px;
+				bottom: 17%;
+				max-height: 70px;
+				font-size: 15px;
 			}
 			@include respond(tab-port) {
 				line-height: 25px;
@@ -95,6 +112,10 @@
 				background-color: $color__btn-hover;
 			}
 			@include respond(phone) {
+				width: 140px;
+				font-size: 15px;
+				height: 40px;
+				bottom: 5%;
 			}
 			@include respond(tab-port) {
 				width: 130px;
