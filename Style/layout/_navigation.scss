@@ -15,10 +15,10 @@
 			font-size: 11px;
 		}
 		@include respond(tab-port) {
-			font-size: 16px;
+			font-size: 12px;
 		}
 		@include respond(tab-land) {
-			font-size: 20px;
+			font-size: 18px;
 		}
 		@include respond(big-desktop) {
 			font-size: 24px;
@@ -28,10 +28,9 @@
 			list-style: none;
 			@include respond(phone) {
 				padding: 2px;
-
 			}
 			@include respond(tab-port) {
-				padding: 5px;
+				padding: 3px;
 			}
 			a {
 				text-decoration: none;
@@ -45,6 +44,111 @@
 				a {
 					color: $color__text-hover;
 				}
+			}
+		}
+	}
+}
+.navItems {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	font-family: $Vazir;
+	position: relative;
+	@include respond(phone) {
+		font-size: 10px;
+	}
+	&-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 10px;
+		}
+	}
+	&__lists {
+		right: 5px;
+		top: 50px;
+
+		background: #f8fbf59c;
+		backdrop-filter: blur(2px);
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		width: 120px;
+		height: 0px;
+		opacity: 0;
+		padding-right: 10px;
+		position: absolute;
+		direction: rtl;
+		color: $color__header-text;
+		transform: scale(0);
+		transform-origin: top;
+		transition: all 0.1s;
+		@include respond(phone) {
+			right: 5px;
+			top: 20px;
+			padding-bottom: 5px;
+		}
+		&-list {
+			padding-bottom: 5px;
+			list-style: none;
+			&::before {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				background: green;
+				height: 20px;
+			}
+		}
+	}
+}
+.nav {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	font-family: $Vazir;
+	position: relative;
+	@include respond(phone) {
+		font-size: 10px;
+	}
+	&-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 10px;
+		}
+	}
+	&__lists {
+		right: 5px;
+		top: 50px;
+		background: #f8fbf59c;
+		backdrop-filter: blur(2px);
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		width: 120px;
+		height: 0px;
+		opacity: 0;
+		padding-right: 10px;
+		position: absolute;
+		direction: rtl;
+		color: $color__header-text;
+		transform: scale(0);
+		transform-origin: top;
+		transition: all 0.1s;
+		@include respond(phone) {
+			right: 5px;
+			top: 20px;
+			padding-bottom: 5px;
+		}
+		&-list {
+			padding-bottom: 5px;
+			list-style: none;
+			&::before {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				background: green;
+				height: 20px;
 			}
 		}
 	}
