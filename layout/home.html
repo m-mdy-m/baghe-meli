@@ -11,76 +11,79 @@
 </head>
 <body>
 	<!--=============== CONTAINER   ================-->
-	<div class="container bg-red-700 w-full h-screen m-0">
+	<div class="container bgBody w-full h-screen mx-auto small:m-0 small:p-0 mobile:mx-auto mobile:p-0 desktop:px-8">
 	<!--===================  HEADER SITE  ================-->
-		<header class="w-full h-32 [&>*]:background-glass">
+		<header class="w-auto desktop:h-32 [&>*]:background-glass large:h-48 small:h-24 mobile:h-24">
 			<!--===================  SEARCH AND REGISTER  ================-->
-			<div class="w-full  h-1/2 grid grid-cols-[10%_minmax(75%,_1fr)_15%] justify-center items-center [&>*]:h-full">
-				<div class=" flex justify-center [&>*]:bgGlass items-center [&>*]:text-white [&>*]:font-vazir [&>*]:w-full [&>*]:h-full [&>*]:flex [&>*]:justify-center [&>*]:items-center [&>*]:flex-col">
-					<div class="[&>*]:cursor-pointer ">
-						<img src="../icons/SignUp.svg" alt="ثبت نام">
+			<div class="w-auto  h-1/2 grid desktop:grid-cols-[10%_minmax(75%,_1fr)_15%] mobile:grid-cols-[30%_minmax(40%,_1fr)_30%] small:grid-cols-[30%_minmax(40%,_1fr)_30%] justify-center items-center [&>*]:h-full">
+				<div class=" flex justify-center items-center small:h-full mobile:h-full [&>*]:text-white [&>*]:font-vazir [&>*]:w-full [&>*]:h-full [&>*]:flex [&>*]:justify-center [&>*]:items-center [&>*]:flex-col">
+					<div class="[&>*]:cursor-pointer desktop:text-lg small:text-sm mobile:text-base">
+						<img src="../icons/SignUp.svg" alt="ثبت نام" class="desktop:w-8 desktop:h-8 small:w-4 small:h-4 mobile:w-4 mobile:h-4">
 						<i>ثبت نام</i>
 					</div>
-					<div class="[&>*]:cursor-pointer ">
-						<img src="../icons/login.svg" alt="ورود">
+					<div class="[&>*]:cursor-pointer desktop:text-lg" >
+						<img src="../icons/login.svg" alt="ورود" class="desktop:w-8 desktop:h-8 small:w-4 small:h-4 mobile:w-4 mobile:h-4">
 						<i>ورود</i>
 					</div>
 				</div>
-				<div class=" relative flex justify-start items-center py-4 px-8">
-					<img src="../icons/Search.svg" alt="جستجو" class="z-10">
-					<input type="search" class="font-vazir bg-transparent w-full h-full pr-4 text-white mr-4 outline-none border-hidden text-2xl" placeholder="جستجو" autocomplete="off">
+				<div class=" relative flex justify-start items-center desktop:py-4 desktop:px-8 small:p-0 mobile:p-0">
+					<img src="../icons/Search.svg" alt="جستجو" class="z-10 small:w-4 mobile:w-4 desktop:w-6">
+					<input type="search" class="font-vazir bg-transparent w-full h-full desktop:pr-4 small:p-0 mobile:p-0 text-white desktop:mr-4 small:mr-2 mobile:mr-2 outline-none border-hidden desktop:text-2xl small:text-sm mobile:text-sm" placeholder="جستجو" autocomplete="off">
 				</div>
 				<div class="flex justify-around items-center font-vazir text-white">
-					<h3 class="w-auto h-auto dir-lrt ">باغ ملی گنبدکاووس</h3>
-					<img src="../icons/iran.svg" alt="iran" >
+					<h3 class="w-auto h-auto dir-lrt small:text-xs mobile:text-sm">باغ ملی گنبدکاووس</h3>
+					<img src="../icons/iran.svg" alt="iran" class="small:w-4 small:h-4 mobile:w-8 mobile:h-8" >
 				</div>
 			</div>
 			<!--=============== NAVIGATION   ================-->
-			<nav class="w-full h-1/2  grid grid-cols-6 justify-center items-center [&>*]:h-full text-white "> 
-				<div class="bg-slate-800 h-full flex justify-center items-center  flex-col">
-					<img src="../icons/home.svg" alt="" >
+			<nav class="w-auto h-1/2  grid grid-cols-6 justify-center items-center [&>*]:h-full text-white [&>*]:desktop:mx-4 [&>*]:mobile:mx-2"> 
+				<div class=" h-full flex justify-center items-center  flex-col [&>*]:small:text-[8px] [&>*]:mobile:text-[8px] [&>*]:desktop:text-base" id="lineHover">
+					<img src="../icons/home.svg" alt="" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8">
 					<p>صفحه اصلی</p>
 				</div>
-				<div class="bg-orange-600 relative felx justify-center items-center">
-					<div class="list-description h-full w-full flex-col [&>*]:cursor-pointer font-vazir flex justify-center items-center bg-green-600">
-						<img src="../icons/Introduction.svg" alt="Introduction">
+				<div class=" relative felx justify-center items-center"  id="lineHover">
+					<div class="list-description h-full w-full flex-col [&>*]:cursor-pointer font-vazir flex justify-center items-center  [&>*]:small:text-[8px] [&>*]:mobile:text-[8px] [&>*]:desktop:text-base">
+						<img src="../icons/Introduction.svg" alt="Introduction" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8" >
 						<h3>معرفی باغ</h3>
 					</div>
-					<ul  class="list-items  bg-glass-list absolute w-full opacity-0 h-0 flex flex-col justify-between items-start [&>*]:pr-4 [&>*]:cursor-pointer  [&>*]:w-full [&>*]:font-vazir [&>*]:text-right [&>*]:py-2">
+					<ul  class="list-items [&>*]:desktop:text-base [&>*]:mobile:text-[8px] [&>*]:small:text-[8px] bg-glass-list absolute w-full opacity-0 h-0 flex flex-col justify-between items-start [&>*]:desktop:pr-4 [&>*]:small:pr-2 [&>*]:cursor-pointer  [&>*]:w-full [&>*]:font-vazir [&>*]:text-right [&>*]:desktop:py-2 [&>*]:small:py-1">
 						<li class="hover:bg-glass-list-hover ">تاریخچه</li>
 						<li class="hover:bg-glass-list-hover ">بخش های باغ</li>
 						<li class="hover:bg-glass-list-hover ">مسیر بازدید</li>
 						<li class="hover:bg-glass-list-hover ">قوانین باغ</li>
 					</ul>
 				</div>
-				<div class="bg-orange-200 h-full flex justify-center items-center  flex-col">
-					<img src="../icons/image.svg">
+				<div class="h-full flex justify-center items-center  flex-col [&>*]:small:text-[8px] [&>*]:mobile:text-[8px]  [&>*]:desktop:text-base"  id="lineHover">
+					<img src="../icons/image.svg" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8" >
 					<p>گالری عکس</p>
 				</div>
-				<div class="bg-violet-800 h-full flex justify-center items-center  flex-col">
-				<img src="../icons/leaf-maple.svg" alt="">
-				<p>خاطرات</p>
+				<div class="h-full flex justify-center items-center  flex-col [&>*]:small:text-[8px] [&>*]:mobile:text-[8px] [&>*]:desktop:text-base"  id="lineHover">
+					<img src="../icons/leaf-maple.svg" alt="" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8" >
+					<p>خاطرات</p>
 				</div>
-				<div class="bg-slate-100">
-					<img src="../icons/layer-plus.svg" alt="">
+				<div class=" h-full flex justify-center items-center  flex-col [&>*]:small:text-[8px] [&>*]:mobile:text-[8px] [&>*]:desktop:text-base"  id="lineHover">
+					<img src="../icons/layer-plus.svg" alt="" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8" >
 					<p>درج خاطره</p>
 				</div>
-				<div class="bg-stone-600  relative felx justify-center items-center" >
-					<div class=" list-description h-full w-full flex-col [&>*]:cursor-pointer font-vazir flex justify-center items-center bg-green-600">
-						<img src="../icons/land-mine-on.svg" alt="Introduction">
+				<div  id="lineHover" class="  relative felx justify-center items-center " >
+					<div class=" list-description h-full w-full flex-col [&>*]:cursor-pointer font-vazir flex justify-center items-center  [&>*]:small:text-[8px] [&>*]:mobile:text-[8px] [&>*]:desktop:text-base">
+						<img src="../icons/land-mine-on.svg" alt="Introduction" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8" >
 						<h3>اموزش ویژه فنی</h3>
 					</div>
-					<ul  class="list-items  bg-glass-list absolute w-full opacity-0 h-0 flex flex-col justify-between items-start [&>*]:pr-4 [&>*]:cursor-pointer  [&>*]:w-full [&>*]:font-vazir [&>*]:text-right [&>*]:py-2">
+					<ul  class="list-items [&>*]:desktop:text-base [&>*]:mobile:text-[8px] [&>*]:small:text-[8px] bg-glass-list absolute w-full opacity-0 h-0 flex flex-col justify-between items-start [&>*]:desktop:pr-4 [&>*]:small:pr-2 [&>*]:cursor-pointer  [&>*]:w-full [&>*]:font-vazir [&>*]:text-right [&>*]:desktop:py-2 [&>*]:small:py-1">
 						<li class="hover:bg-glass-list-hover ">کاراگاه</li>
 						<li class="hover:bg-glass-list-hover "> مقالات</li>
 					</ul>
 				</div>
 			</nav>
 		</header>
+		<!--==============   MAIN  ================-->
+		<main>
+
+		</main>
 	</div>
 
 
-	<!--==============   MAIN  ================-->
 
 	<!--=============   FOOTER   ================-->
 	

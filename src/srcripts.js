@@ -1,3 +1,5 @@
+let body = document.body
+console.log(body.offsetWidth);
 const listDescription = document.querySelectorAll('.list-description');
 const listItems = document.querySelectorAll('.list-items');
 

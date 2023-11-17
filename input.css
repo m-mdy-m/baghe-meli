@@ -23,20 +23,29 @@
     font-family: "vazir-Medium";
     src: url("../fonts/Vazir-Medium.ttf");
   }
-  .bgGlass {
-    background: rgba(129, 125, 125, 0.37);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+
+  .bgBody {
+    background-image: url("../images/wave.svg"),
+      linear-gradient(
+        to left bottom,
+        #322f30,
+        #2d2b2c,
+        #292628,
+        #242225,
+        #1f1e21,
+        #1e1e21,
+        #1c1e21,
+        #1b1e21,
+        #1e2224,
+        #212628,
+        #242a2b,
+        #282e2e
+      );
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: top center;
   }
-  .bgGlass:hover {
-    /* From https://css.glass */
-    background: rgba(129, 125, 125, 0.61);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.2px);
-    -webkit-backdrop-filter: blur(9.2px);
-    transition: all 1s;
-  }
+
   .background-glass {
     /* From https://css.glass */
     background: rgba(248, 241, 241, 0);
@@ -54,6 +63,18 @@
     -webkit-backdrop-filter: blur(17.1px);
     border: 1px solid rgba(255, 255, 255, 0.47);
   }
+  @media (max-width: 479px) {
+    .bg-glass-list {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+  @media (min-width: 480px) {
+    .bg-glass-list {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
   .bg-glass-list-hover {
     background: rgba(255, 255, 255, 0.27);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -62,14 +83,49 @@
     border: 1px solid rgba(255, 255, 255, 0.02);
   }
   .bg-glass-list-hover:last-child {
-    transition: all .3s;
+    transition: all 0.3s;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
   }
-  #list-items{
+  #list-items {
     visibility: hidden;
   }
   .dir-lrt {
     direction: ltr;
+  }
+  #lineHover {
+    position: relative;
+    cursor: pointer;
+  }
+  #lineHover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(
+      to left bottom,
+      #8e0c0c,
+      #694800,
+      #3b6017,
+      #006d56,
+      #0f7381
+    );
+    bottom: 0;
+    right: 0;
+    transform-origin: center;
+    transform: scale(0);
+    transition: all 0.1s;
+  }
+  #lineHover:hover::before {
+    transform: scale(1);
+    background-image: linear-gradient(
+      to left bottom,
+      #8e0c0c,
+      #694800,
+      #3b6017,
+      #006d56,
+      #0f7381
+    );
+    transition: all 0.7s;
   }
 }
