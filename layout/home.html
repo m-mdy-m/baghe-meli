@@ -1,286 +1,222 @@
 <!DOCTYPE html>
-<html lang="fa">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>باغ ملی گنبد</title>
-		<link rel="stylesheet" href="../Style/home.css" />
-		<link rel="icon" href="../images/ghaboos tower .png" />
-	</head>
-	<body>
-		<div class="container">
-			<header class="header">
-				<section class="header__top">
-					<div class="header__logo">
-						<img
-							src="../icons/iran.svg"
-							alt=""
-							class="header__logo-photo"
-						/>
-						<h3 class="header__logo-text">
-							باغ ملی شهرستان گنبدکاووس
-						</h3>
+<html lang="fa" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>باغ ملی</title>
+	<!-- link css file -->
+	<link rel="stylesheet" href="../css/style.css">
+	<!-- link fav icon -->
+	<link rel="icon" href="../icons/iran.svg">
+	<link rel="stylesheet" href="../lib/swiper-bundle.css">
+</head>
+<body class="bgBody">
+	<!--=============== CONTAINER   ================-->
+	<div class="container w-full h-auto mx-auto small:m-0 small:p-0 mobile:mx-auto mobile:p-0 desktop:px-8 desktop:mt-4">
+	<!--===================  HEADER SITE  ================-->
+		<header class="w-auto desktop:h-32 [&>*]:background-glass large:h-48 small:h-24 mobile:h-24 ">
+			<!--===================  SEARCH AND REGISTER  ================-->
+			<div class="w-auto  h-1/2 grid desktop:grid-cols-[10%_minmax(75%,_1fr)_15%] mobile:grid-cols-[30%_minmax(40%,_1fr)_30%] small:grid-cols-[30%_minmax(40%,_1fr)_30%] justify-center items-center [&>*]:h-full">
+				<div class=" flex justify-center items-center small:h-full mobile:h-full [&>*]:text-white [&>*]:font-vazir [&>*]:w-full [&>*]:h-full [&>*]:flex [&>*]:justify-center [&>*]:items-center [&>*]:flex-col">
+					<div class="[&>*]:cursor-pointer desktop:text-lg small:text-sm mobile:text-base">
+						<img src="../icons/SignUp.svg" alt="ثبت نام" class="desktop:w-8 desktop:h-8 small:w-4 small:h-4 mobile:w-4 mobile:h-4">
+						<i>ثبت نام</i>
 					</div>
-					<div class="header__search">
-						<input
-							type="search"
-							class="header__search-input"
-							placeholder="جستجو"
-							autofocus
-						/>
-						<img
-							src="../icons/Search.svg"
-							alt="Search"
-							class="header__search-icon"
-						/>
+					<div class="[&>*]:cursor-pointer desktop:text-lg" >
+						<img src="../icons/login.svg" alt="ورود" class="desktop:w-8 desktop:h-8 small:w-4 small:h-4 mobile:w-4 mobile:h-4">
+						<i>ورود</i>
 					</div>
-
-					<div class="header__icons">
-						<a href="#" class="header__icons-link">
-							<img
-								class="header__icons-icon"
-								src="../icons/internet.svg"
-								alt=""
-							/>
-						</a>
-						<a href="#" class="header__icons-link">
-							<img
-								src="../icons/moon.svg "
-								alt=""
-								class="header__icons-icon"
-							/>
-						</a>
-
-						<a href="#" class="header__icons-link">
-							<img
-								src="../icons/Buy.svg"
-								alt=""
-								class="header__icons-icon"
-							/>
-						</a>
-						<a href="#" class="header__icons-link">
-							<img
-								src="../icons/Profile.svg"
-								alt=""
-								class="header__icons-icon"
-							/>
-						</a>
-					</div>
-				</section>
-				<section class="header__bottom">
-					<nav class="navigation">
-						<ul class="navigation__items">
-							<li class="navigation__items-item">
-								<a href="#">صفحه اصلی</a>
-							</li>
-							<ul class="navigation__items-item navItems">
-								<a href="#" class="navItems-link">
-									<img
-										src="../icons/chevron_down.svg"
-										alt=""
-									/>
-									معرفی باغ
-								</a>
-								<ul class="navItems__lists">
-									<li class="navItems__lists-list">
-										<a href="#">تاریخچه</a>
-									</li>
-									<li class="navItems__lists-list">
-										<a href="#">بخش های باغ</a>
-									</li>
-									<li class="navItems__lists-list">
-										<a href="#">مسیر بازدید</a>
-									</li>
-									<li class="navItems__lists-list">
-										<a href="#">برنامه و قوانین باغ</a>
-									</li>
-								</ul>
-							</ul>
-							<li class="navigation__items-item">
-								<a href="#">گالری</a>
-							</li>
-							<li class="navigation__items-item">
-								<a href="#">خاظرات بازدید</a>
-							</li>
-							<li class="navigation__items-item">
-								<a href="#">درج خاطره</a>
-							</li>
-							<ul class="navigation__items-item nav">
-								<a href="#" class="nav-link">
-									<img
-										src="../icons/chevron_down.svg"
-										alt=""
-									/>
-									اموزش ویژه
-								</a>
-								<ul class="nav__lists">
-									<li class="nav__lists-list">
-										<a href="#">کارگاه ها</a>
-									</li>
-									<li class="nav__lists-list">
-										<a href="#"> مقالات</a>
-									</li>
-								</ul>
-							</ul>
-							<li class="navigation__items-item">
-								<a href="#">تماس با ما</a>
-							</li>
-						</ul>
-					</nav>
-				</section>
-			</header>
-			<main class="main">
-				<section class="introduction">
-					<div class="introduction__slider">
-						<div class="introduction__slider-item">
-							<h2 class="introduction__slider-title">
-								لورم ایپسوم متن ساختگی
-							</h2>
-							<p class="introduction__slider-text">
-								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-								صنعت چاپ،راحانلورم ایپسوم متن ساختگی با تولید
-								سادگی نامفهوم از صنعت چاپ،
-							</p>
-							<button class="introduction__slider-btn">
-								<a href="#"> متن ساختگی </a>
-							</button>
-							<img
-								src="../images/imagesOne.png"
-								alt="imagesOne"
-								class="introduction__slider-photo"
-							/>
-						</div>
-						<div class="introduction__slider-item">
-							<h2 class="introduction__slider-title">
-								لورم ایپسوم متن ساختگی
-							</h2>
-							<p class="introduction__slider-text">
-								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-								صنعت چاپ،راحانلورم ایپسوم متن ساختگی با تولید
-								سادگی نامفهوم از صنعت چاپ،
-							</p>
-							<button class="introduction__slider-btn">
-								<a href="#"> متن ساختگی </a>
-							</button>
-							<img
-								src="../images/imagesTwo.png"
-								alt="imagesTwo"
-								class="introduction__slider-photo"
-							/>
-						</div>
-
-						<div class="introduction__slider-item">
-							<h2 class="introduction__slider-title">
-								لورم ایپسوم متن ساختگی
-							</h2>
-							<p class="introduction__slider-text">
-								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-								صنعت چاپ،راحانلورم ایپسوم متن ساختگی با تولید
-								سادگی نامفهوم از صنعت چاپ،
-							</p>
-							<button class="introduction__slider-btn">
-								<a href="#"> متن ساختگی </a>
-							</button>
-							<img
-								src="../images/imagesOne.png"
-								alt="imagesOne"
-								class="introduction__slider-photo"
-							/>
-						</div>
-					</div>
-				</section>
-			</main>
-			<footer class="footer">
-				<div class="footer__wrapper">
-					<section class="contact">
-						<div class="social">
-							<div class="social__send">
-								<img
-									src="../icons/Prev.svg"
-									alt=""
-									class="social__send-icon"
-								/>
-								<input
-									type="email"
-									class="social__send-email"
-									placeholder="لطفا ادرس ایمیل خود را وارد کنید"
-									required
-									autofocus
-								/>
-								<img
-									src="../icons/Email.svg"
-									alt="Email"
-									class="social__send-icon"
-								/>
-							</div>
-							<div class="social__media">
-								<a href="#" class="social__media-links">
-									<img
-										src="../icons/Email.svg"
-										alt=""
-										class="social__media-icon"
-									/>
-								</a>
-								<a href="#" class="social__media-links">
-									<img
-										src="../icons/Github.svg"
-										alt=""
-										class="social__media-icon"
-									/>
-								</a>
-								<a href="#" class="social__media-links">
-									<img
-										src="../icons/Instagram.svg"
-										alt=""
-										class="social__media-icon"
-									/>
-								</a>
-								<a href="#" class="social__media-links">
-									<img
-										src="../icons/Twiter.svg"
-										alt=""
-										class="social__media-icon"
-									/>
-								</a>
-							</div>
-						</div>
-						<div class="address">
-							<div class="address__wrapper">
-								<img
-									src="../icons/mobile.svg"
-									alt=""
-									class="address__icon"
-								/>
-								<div class="address__texts">
-									<p class="address__texts-text">
-										تلفن:09115291407
-									</p>
-									<p class="address__texts-text">
-										فکس:88562932
-									</p>
-									<p class="address__texts-text">
-										supports@iranhdm.ir
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="relationship">
-							<div class="relationship__box">
-								<img
-									src="../icons/location.svg"
-									alt="location"
-									class="relationship__img"
-								/>
-								<p class="relationship__address">
-									استان گلستان - گنبد -باغ ملی
-								</p>
-							</div>
-						</div>
-					</section>
 				</div>
-			</footer>
-		</div>
-		<script src="../sctipts/home.js"></script>
-	</body>
+				<div class=" relative flex justify-start items-center desktop:py-4 desktop:px-8 small:p-0 mobile:p-0">
+					<img src="../icons/Search.svg" alt="جستجو" class="z-10 small:w-4 mobile:w-4 desktop:w-6">
+					<input type="search" class="font-vazir bg-transparent w-full h-full desktop:pr-4 small:p-0 mobile:p-0 text-white desktop:mr-4 small:mr-2 mobile:mr-2 outline-none border-hidden desktop:text-2xl small:text-sm mobile:text-sm" placeholder="جستجو" autocomplete="off">
+				</div>
+				<div class="flex justify-around items-center font-vazir text-white">
+					<h3 class="w-auto h-auto dir-lrt small:text-xs mobile:text-sm">باغ ملی گنبدکاووس</h3>
+					<img src="../icons/iran.svg" alt="iran" class="small:w-4 small:h-4 mobile:w-8 mobile:h-8" >
+				</div>
+			</div>
+			<!--=============== NAVIGATION   ================-->
+			<nav class="w-auto h-1/2  grid grid-cols-6 justify-center items-center [&>*]:h-full text-white [&>*]:desktop:mx-4 [&>*]:mobile:mx-2"> 
+				<div class=" h-full flex justify-center items-center  flex-col [&>*]:small:text-[8px] [&>*]:mobile:text-[8px] [&>*]:desktop:text-base" id="lineHover">
+					<img src="../icons/home.svg" alt="" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8">
+					<p>صفحه اصلی</p>
+				</div>
+				<div class=" relative felx justify-center items-center z-50"  id="lineHover">
+					<div class="list-description h-full w-full flex-col [&>*]:cursor-pointer font-vazir flex justify-center items-center  [&>*]:small:text-[8px] [&>*]:mobile:text-[8px] [&>*]:desktop:text-base">
+						<img src="../icons/Introduction.svg" alt="Introduction" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8" >
+						<h3>معرفی باغ</h3>
+					</div>
+					<ul  class="list-items [&>*]:desktop:text-base [&>*]:mobile:text-[8px] [&>*]:small:text-[8px] bg-glass-list absolute w-full opacity-0 h-0 flex flex-col justify-between items-start [&>*]:desktop:pr-4 [&>*]:small:pr-2 [&>*]:cursor-pointer  [&>*]:w-full [&>*]:font-vazir [&>*]:text-right [&>*]:desktop:py-2 [&>*]:small:py-1">
+						<li class="hover:bg-glass-list-hover ">تاریخچه</li>
+						<li class="hover:bg-glass-list-hover ">بخش های باغ</li>
+						<li class="hover:bg-glass-list-hover ">مسیر بازدید</li>
+						<li class="hover:bg-glass-list-hover ">قوانین باغ</li>
+					</ul>
+				</div>
+				<div class="h-full flex justify-center items-center  flex-col [&>*]:small:text-[8px] [&>*]:mobile:text-[8px]  [&>*]:desktop:text-base"  id="lineHover">
+					<img src="../icons/image.svg" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8" >
+					<p>گالری عکس</p>
+				</div>
+				<div class="h-full flex justify-center items-center  flex-col [&>*]:small:text-[8px] [&>*]:mobile:text-[8px] [&>*]:desktop:text-base"  id="lineHover">
+					<img src="../icons/leaf-maple.svg" alt="" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8" >
+					<p>خاطرات</p>
+				</div>
+				<div class=" h-full flex justify-center items-center  flex-col [&>*]:small:text-[8px] [&>*]:mobile:text-[8px] [&>*]:desktop:text-base"  id="lineHover">
+					<img src="../icons/layer-plus.svg" alt="" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8" >
+					<p>درج خاطره</p>
+				</div>
+				<div  id="lineHover" class="  relative felx justify-center items-center " >
+					<div class=" list-description h-full w-full flex-col [&>*]:cursor-pointer font-vazir flex justify-center items-center  [&>*]:small:text-[8px] [&>*]:mobile:text-[8px] [&>*]:desktop:text-base">
+						<img src="../icons/land-mine-on.svg" alt="Introduction" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8" >
+						<h3>اموزش ویژه فنی</h3>
+					</div>
+					<ul  class="list-items [&>*]:desktop:text-base [&>*]:mobile:text-[8px] [&>*]:small:text-[8px] bg-glass-list absolute w-full opacity-0 h-0 flex flex-col justify-between items-start [&>*]:desktop:pr-4 [&>*]:small:pr-2 [&>*]:cursor-pointer  [&>*]:w-full [&>*]:font-vazir [&>*]:text-right [&>*]:desktop:py-2 [&>*]:small:py-1">
+						<li class="hover:bg-glass-list-hover ">کاراگاه</li>
+						<li class="hover:bg-glass-list-hover "> مقالات</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--==============   MAIN  ================-->
+		<main class="w-full mt-12">
+			<div class="w-4/6 h-4/6 mx-auto ">
+		<!--==============   SLIDER  ================-->
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide relative" id="shadow-img">
+						<img src="../images/imagesOne.png" /><div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				  </div>
+			</div>
+		</main>
+		<!--=============   FOOTER   ================-->
+		<footer class="w-full h-80 mt-32 mb-8 border-t border-slate-600 border-solid">
+			<div class="w-full h-full grid grid-rows-[35%_minmax(65%,_1fr)] ">
+				<div class="w-full font-vazir_Bold pr-4 pt-4 flex justify-center items-center flex-col">
+					<div class="flex justify-center items-center">
+						<img src="../icons/phone-rotary.svg" alt="contact" class="pl-4">
+						<h3 class="font-vazir text-4xl text-white">ارتباط با ما</h3>
+					</div>
+					<p class="font-vazir_Light text-2xl text-[#9195a4]">برای ارتباط با ما میتونین به شبکه های اجتماعی مراجعه کنید یا فرم زیر را پرکنید!</p>
+				</div>
+				<div class="w-full grid grid-cols-[30%_minmax(40%,_1fr)_30%] justify-center items-center">
+					<div class="w-full h-full ">
+						<h4 class="font-vazir_Medium text-center text-2xl text-[#9195a4]">شبکه های اجتماعی</h4>
+						<div class="flex justify-around items-center [&>*]:font-vazir_Light [&>*]:text-lg [&>*]:cursor-pointer">
+							<div class="flex justify-center items-center flex-col text-[#009827]">
+								<img src="" alt="">
+								<p>آی گپ</p>
+							</div>
+							<div class="flex justify-center items-center flex-col text-[#e8845c]">
+								<img src="" alt="">
+								<p>ایتا</p>
+							</div>
+							<div class="flex justify-center items-center flex-col text-[#008693]">
+								<img src="" alt="">
+								<p>سوروش</p>
+							</div>
+						</div>
+					</div>
+					<form action="" class=" [&>*]:rounded-md  [&>*]:border-none  [&>*]:w-4/6 [&>*]:pr-4 [&>*]:h-full flex justify-evenly items-center flex-col w-full h-full">
+						<div class="[&>*]:w-full mb-4 [&>*]:outline-none  [&>*]:bg-transparent [&>*]:border-b  relative  flex justify-start items-center text-white">
+							<input type="text" id="name" placeholder="نام" autocomplete="off" class=" w-full h-full" >
+						</div>
+						<div class="[&>*]:w-full my-4  [&>*]:outline-none  [&>*]:bg-transparent [&>*]:border-b  relative flex justify-start items-center text-white">
+							<input type="email" id="email" placeholder="پست الکترونیک" autocomplete="off"  class=" w-fullh-full">
+						</div>
+						<div class="[&>*]:w-full my-4  [&>*]:outline-none [&>*]:bg-transparent [&>*]:border-b   relative flex justify-start items-center text-white">
+							<input type="text" id="comment" placeholder="پیام" autocomplete="off" class=" w-full  h-full" >
+						</div>
+						<div class="w-full flex justify-center items-center text-[#9195a4]  ">
+							<button type="submit" class="w-24 h-12 rounded-md bg-gray-700 hover:bg-gray-800">ارسال</button>
+						</div>
+					</form>
+					<div class="w-full h-full flex justify-center items-center flex-col">
+						<h3 class="font-vazir_Medium text-center text-2xl text-[#9195a4]">شماره تماس</h3>
+						<div class="dir-lrt w-full h-full flex justify-evenly items-start flex-col [&>*]:text-white">
+							<div class="w-full h-full  flex justify-start items-center ml-2 my-4 background-glass ">
+								<img src="../icons/envelope.svg" alt="email">
+								<p class="pl-2" >mahdimamashli1383@gmail.com</p>
+							</div>
+							<div class="w-full h-full  flex justify-start items-center ml-2 my-4 background-glass ">
+								<img src="../icons/phone.svg" alt="phone">
+								<p class="pl-2" >+98-911-529-1407</p>
+							</div>
+							<div class=" w-full h-full flex justify-start items-center ml-2 my-4 background-glass ">
+								<img src="../icons/location-dot.svg" alt="location">
+								<p class="pl-2" >گلستان-مینودشت-روستای_پس_پشته</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!--=============  SCRIPTS FILE   ================-->
+	<script src="../lib/swiper-bundle.js"></script>
+	<script src="../src/slider.js"></script> 
+	<script src="../src/srcripts.js"></script> 
+</body>
 </html>
