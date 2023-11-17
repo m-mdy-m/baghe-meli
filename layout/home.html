@@ -151,15 +151,53 @@
 			</div>
 		</main>
 		<!--=============   FOOTER   ================-->
-		<footer class="w-full h-80 mt-4">
+		<footer class="w-full h-80 mt-32 border-t border-slate-600 border-solid">
 			<div class="w-full h-full grid grid-rows-[35%_minmax(65%,_1fr)] ">
-				<div class="w-full  bg-orange-600 font-vazir_Bold pr-4 pt-4">
-					<h3 class="text-4xl">ارتباط با ما</h3>
-				<p class="font-vazir_Light text-2xl">برای ارتباط با ما میتونین به شبکه های اجتماعی مراجعه کنید با فرم زیر را پرکنید!</p>
-			</div>
-			<div class="w-full bg-green-500 grid grid-cols-3 justify-center items-center">
-			
-			</div>
+				<div class="w-full font-vazir_Bold pr-4 pt-4 flex justify-center items-center flex-col">
+					<div class="flex justify-center items-center">
+						<img src="../icons/phone-rotary.svg" alt="contact" class="pl-4">
+						<h3 class="font-vazir text-4xl text-white">ارتباط با ما</h3>
+					</div>
+					<p class="font-vazir_Light text-2xl text-[#9195a4]">برای ارتباط با ما میتونین به شبکه های اجتماعی مراجعه کنید با فرم زیر را پرکنید!</p>
+				</div>
+				<div class="w-full grid grid-cols-[30%_minmax(40%,_1fr)_30%] justify-center items-center">
+					<div class="w-full h-full bg-red-600">
+						<h4 class="font-vazir_Medium text-center text-2xl text-[#9195a4]">شبکه های اجتماعی</h4>
+						<div class="flex justify-around items-center [&>*]:font-vazir_Light [&>*]:text-lg">
+							<div class="flex justify-center items-center flex-col">
+								<img src="" alt="">
+								<p>شاد</p>
+							</div>
+							<div class="flex justify-center items-center flex-col">
+								<img src="" alt="">
+								<p>ایتا</p>
+							</div>
+							<div class="flex justify-center items-center flex-col">
+								<img src="" alt="">
+								<p>سوروش</p>
+							</div>
+						</div>
+					</div>
+					<form action="" class=" flex justify-center items-center flex-col bg-green-700 w-full h-full">
+						<div>
+							<input type="text" id="name" placeholder="test">
+							<label for="name" ></label>
+						</div>
+						<div>
+							<input type="email" id="email" placeholder="test">
+							<label for="email" ></label>
+						</div>
+						<div>
+							<input type="text" id="comment" placeholder="test">
+							<label for="comment" ></label>
+						</div>
+					</form>
+					<div class="w-full h-full bg-orange-700">
+						<div>
+							<h3>شماره تماس</h3>
+						</div>
+					</div>
+				</div>
 			</div>
 		</footer>
 	</div>
