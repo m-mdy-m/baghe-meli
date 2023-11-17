@@ -8,12 +8,13 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<!-- link fav icon -->
 	<link rel="icon" href="../icons/iran.svg">
+	<link rel="stylesheet" href="../lib/swiper-bundle.css">
 </head>
-<body class="bgBody">
+<body class="bgBody h-screen">
 	<!--=============== CONTAINER   ================-->
-	<div class="container w-full h-screen mx-auto small:m-0 small:p-0 mobile:mx-auto mobile:p-0 desktop:px-8">
+	<div class="container w-full h-screen mx-auto small:m-0 small:p-0 mobile:mx-auto mobile:p-0 desktop:px-8 desktop:mt-4 -z-10">
 	<!--===================  HEADER SITE  ================-->
-		<header class="w-auto desktop:h-32 [&>*]:background-glass large:h-48 small:h-24 mobile:h-24">
+		<header class="w-auto desktop:h-32 [&>*]:background-glass large:h-48 small:h-24 mobile:h-24 ">
 			<!--===================  SEARCH AND REGISTER  ================-->
 			<div class="w-auto  h-1/2 grid desktop:grid-cols-[10%_minmax(75%,_1fr)_15%] mobile:grid-cols-[30%_minmax(40%,_1fr)_30%] small:grid-cols-[30%_minmax(40%,_1fr)_30%] justify-center items-center [&>*]:h-full">
 				<div class=" flex justify-center items-center small:h-full mobile:h-full [&>*]:text-white [&>*]:font-vazir [&>*]:w-full [&>*]:h-full [&>*]:flex [&>*]:justify-center [&>*]:items-center [&>*]:flex-col">
@@ -41,7 +42,7 @@
 					<img src="../icons/home.svg" alt="" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8">
 					<p>صفحه اصلی</p>
 				</div>
-				<div class=" relative felx justify-center items-center"  id="lineHover">
+				<div class=" relative felx justify-center items-center z-50"  id="lineHover">
 					<div class="list-description h-full w-full flex-col [&>*]:cursor-pointer font-vazir flex justify-center items-center  [&>*]:small:text-[8px] [&>*]:mobile:text-[8px] [&>*]:desktop:text-base">
 						<img src="../icons/Introduction.svg" alt="Introduction" class="small:w-4 small:h-4 mobile:w-4 mobile:h-4 desktop:w-8 desktop:h-8" >
 						<h3>معرفی باغ</h3>
@@ -78,8 +79,76 @@
 			</nav>
 		</header>
 		<!--==============   MAIN  ================-->
-		<main>
-
+		<main class="w-full mt-12">
+			<div class="w-4/6 h-4/6 mx-auto ">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide relative" id="shadow-img">
+						<img src="../images/imagesOne.png" /><div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide  relative" id="shadow-img">
+						<img src="../images/imagesOne.png" />
+						<div class=" text-base right-4 bottom-4 absolute">
+							<h2 class="text-4xl text-[#ececee]">تایتل</h2>
+							<p class="text-lg w-3/6 text-[#c7c9d1b9]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam, nobis totam dolores nam soluta similique nostrum eligendi necessitatibus vel.</p>
+						</div>
+					</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				  </div>
+			</div>
 		</main>
 	</div>
 
@@ -88,6 +157,8 @@
 	<!--=============   FOOTER   ================-->
 	
 	<!--=============  SCRIPTS FILE   ================-->
-	<script src="../src/srcripts.js"></script>
+	<script src="../lib/swiper-bundle.js"></script>
+	<script src="../src/app.js"></script> 
+	<script src="../src/srcripts.js"></script> 
 </body>
 </html>
