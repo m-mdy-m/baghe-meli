@@ -534,62 +534,141 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-@font-face {
-  font-family: "Sarbaz";
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
 
-  src: url("../../fonts/Sarbaz.otf");
+@media (min-width: 480px ) {
+  .container {
+    max-width: 480px ;
+    padding-right: .75rem;
+    padding-left: .75rem;
+  }
+}
+
+@media (min-width: 991px) {
+  .container {
+    max-width: 991px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1366px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+.visible {
+  visibility: visible;
+}
+
+.collapse {
+  visibility: collapse;
+}
+
+.relative {
+  position: relative;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.block {
+  display: block;
+}
+
+.table {
+  display: table;
+}
+
+.contents {
+  display: contents;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize {
+  resize: both;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.outline {
+  outline-style: solid;
 }
 
 @font-face {
   font-family: "Vazir";
 
-  src: url("../../fonts/Vazir.ttf");
+  src: url("../fonts/Vazir.ttf");
 }
 
 @font-face {
   font-family: "Vazir-Light";
 
-  src: url("../../fonts/Vazir-Light.ttf");
+  src: url("../fonts/Vazir-Light.ttf");
 }
 
 @font-face {
   font-family: "Vazir-Bold";
 
-  src: url("../../fonts/Vazir-Bold.ttf");
+  src: url("../fonts/Vazir-Bold.ttf");
 }
 
 @font-face {
   font-family: "Vazir-Black";
 
-  src: url("../../fonts/Vazir-Black.ttf");
+  src: url("../fonts/Vazir-Black.ttf");
 }
 
 @font-face {
   font-family: "Vazir-Medium";
 
-  src: url("../../fonts/Vazir-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Vazir-Thin";
-
-  src: url("../../fonts/Vazir-Thin.ttf");
-}
-
-@font-face {
-  font-family: "MAVIS";
-
-  src: url("../../fonts/MAVIS.otf");
-}
-
-@font-face {
-  font-family: "MAVISBold";
-
-  src: url("../../fonts/MAVISBold.woff");
-}
-
-@font-face {
-  font-family: "MAVISLight";
-
-  src: url("../../fonts/MAVISLight.ttf");
+  src: url("../fonts/Vazir-Medium.ttf");
 }
