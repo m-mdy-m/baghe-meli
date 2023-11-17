@@ -1,1009 +1,595 @@
+/*
+! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
+*/
 
-@keyframes lineMartyrs {
-  0% {
-    transform: scale(0.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-* {
-  padding: 0;
-  border: none;
-  margin: 0;
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
   box-sizing: border-box;
-  outline: none;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
 }
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
 
 body {
-  width: 100%;
-  min-height: 100vh;
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
   position: relative;
-  background-color: #f8fbf5;
-  background-image: url("../../images/wave-haikei.svg");
-  background-size: cover;
-  font-family: "Vazir";
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
-body::-webkit-scrollbar {
-  width: 7px;
-}
-body::-webkit-scrollbar-thumb {
-  background: rgba(13, 148, 211, 0.631372549);
-  border-radius: 16px;
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
-}
-body::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-body::-webkit-scrollbar-track-piece {
-  opacity: 0;
-}
-@media (max-width: 600px) {
-  body {
-    font-size: 100%;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  body {
-    min-width: 100%;
-    font-size: 60%;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  body {
-    font-size: 70%;
-    overflow-x: hidden;
-  }
-}
-@media (min-width: 1370px) {
-  body {
-    font-size: 85%;
-  }
+  vertical-align: baseline;
 }
 
-.container {
-  width: 100%;
-  height: auto;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-@media (max-width: 600px) {
-  .container {
-    padding: 0 5px;
-  }
+sub {
+  bottom: -0.25em;
 }
 
-.main {
-  min-height: 100vh;
-  width: 100%;
+sup {
+  top: -0.5em;
 }
 
-.introduction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
 }
-.introduction__slider {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  width: 80%;
-  height: 90vh;
-  margin: auto 0;
-  overflow-x: hidden;
-  overflow-wrap: normal;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  border-radius: 10px;
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
 }
-@media (max-width: 600px) {
-  .introduction__slider {
-    width: 100%;
-    margin: auto 0;
-    height: 100vh;
-    overflow: hidden;
-  }
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
 }
-.introduction__slider-item {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: absolute;
-  inset: 0 0 0 0;
-  margin: auto;
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
 }
-@media (max-width: 600px) {
-  .introduction__slider-item {
-    align-items: flex-start;
-  }
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
 }
-.introduction__slider-title {
-  position: absolute;
-  left: 20px;
-  bottom: 120px;
-  color: #ffffff;
-  font-family: "Vazir-Bold";
-  font-size: 20px;
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
 }
-@media (max-width: 600px) {
-  .introduction__slider-title {
-    bottom: 30%;
-    font-size: 25px;
-  }
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
 }
-@media (max-width: 900px) and (min-width: 601px) {
-  .introduction__slider-title {
-    font-size: 25px;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .introduction__slider-title {
-    font-size: 28px;
-  }
-}
-@media (min-width: 1370px) {
-  .introduction__slider-title {
-    font-size: 35px;
-  }
-}
-.introduction__slider-text {
-  position: absolute;
-  left: 20px;
-  bottom: 60px;
-  text-overflow: clip;
-  max-width: 30%;
-  word-spacing: normal;
-  overflow: hidden;
-  max-height: 40px;
-  line-height: 20px;
-  color: #ffffff;
-  font-family: "Vazir-Light";
-  font-size: 13px;
-}
-@media (max-width: 600px) {
-  .introduction__slider-text {
-    line-height: 35px;
-    max-width: 60%;
-    left: 20px;
-    bottom: 17%;
-    max-height: 70px;
-    font-size: 15px;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .introduction__slider-text {
-    line-height: 25px;
-    max-height: 52px;
-    font-size: 15px;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .introduction__slider-text {
-    line-height: 25px;
-    max-height: 49px;
-    bottom: 65px;
-    font-size: 20px;
-  }
-}
-@media (min-width: 1370px) {
-  .introduction__slider-text {
-    line-height: 25px;
-    max-height: 50px;
-    bottom: 70px;
-    font-size: 25px;
-  }
-}
-.introduction__slider-btn {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  width: 130px;
-  height: 30px;
-  border-radius: 10px;
-  background-color: #0f8319;
-  cursor: pointer;
-}
-.introduction__slider-btn a {
-  text-decoration: none;
-  font-family: "Vazir-Bold";
-  color: #ffffff;
-}
-.introduction__slider-btn:hover {
-  background-color: #07a521;
-}
-@media (max-width: 600px) {
-  .introduction__slider-btn {
-    width: 140px;
-    font-size: 15px;
-    height: 40px;
-    bottom: 5%;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .introduction__slider-btn {
-    width: 130px;
-    font-size: 15px;
-    height: 35px;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .introduction__slider-btn {
-    width: 130px;
-    font-size: 18px;
-    height: 35px;
-  }
-}
-@media (min-width: 1370px) {
-  .introduction__slider-btn {
-    width: 150px;
-    font-size: 16px;
-    height: 40px;
-  }
-}
-.introduction__slider-photo {
-  box-shadow: 2px 7px 10px 0px black;
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
   height: auto;
 }
-.introduction__slider-buttons {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  position: absolute;
-  border: none;
-  outline: none;
-  z-index: 2000000000000000;
-  top: 50%;
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
-.introduction__slider-button {
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
   cursor: pointer;
-  position: absolute;
-}
-.introduction__slider-button:first-child {
-  left: 0;
-}
-.introduction__slider-button:nth-child(2) {
-  right: 0;
-}
-.introduction__slider-icon {
-  cursor: pointer;
-  width: 100%;
 }
 
-.footer {
-  width: 100%;
-  min-height: auto;
-  text-align: center;
-  background-image: linear-gradient(to left, #edf8ea, #eff8ec, #f2f9ee, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5, #f8fbf5);
-  margin: auto;
-}
-.footer__wrapper {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
 
-.contact {
-  display: grid;
-  grid-template-columns: 20% 40% 40%;
-  background: url("../../icons/circle-scatter-haikei.svg") no-repeat;
-  background-size: cover;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  width: 100%;
-  justify-items: center;
-  align-items: center;
-}
-@media (max-width: 600px) {
-  .contact {
-    grid-template-columns: 40% 40% 20%;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .contact {
-    grid-template-columns: 20% 50% 30%;
-  }
-}
-
-.social {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-  justify-content: center;
-  align-items: stretch;
-}
-.social__send {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .social__send {
-    margin-top: 10px;
-  }
-}
-.social__send-icon {
-  width: 25px;
-  position: absolute;
-  right: 5px;
-}
-@media (max-width: 600px) {
-  .social__send-icon {
-    width: 15px;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .social__send-icon {
-    width: 15px;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .social__send-icon {
-    width: 20px;
-  }
-}
-.social__send-icon:first-child {
-  left: 0;
-  z-index: 10000000;
-}
-.social__send-email {
-  direction: rtl;
-  width: 100%;
-  height: 40px;
-  border-radius: 10px;
-  padding-right: 40px;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  position: relative;
-  color: #262626;
-}
-@media (max-width: 600px) {
-  .social__send-email {
-    font-size: 20px;
-    padding-right: 20px;
-    height: 30px;
-  }
-  .social__send-email::-moz-placeholder {
-    transform: scale(0.3);
-    transform-origin: right;
-    float: right;
-  }
-  .social__send-email::placeholder {
-    transform: scale(0.3);
-    transform-origin: right;
-    float: right;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .social__send-email {
-    font-size: 20px;
-    padding-right: 30px;
-    height: 30px;
-  }
-  .social__send-email::-moz-placeholder {
-    transform: scale(0.5);
-    transform-origin: right;
-    float: right;
-  }
-  .social__send-email::placeholder {
-    transform: scale(0.5);
-    transform-origin: right;
-    float: right;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .social__send-email {
-    font-size: 20px;
-    padding-right: 10px;
-  }
-  .social__send-email::-moz-placeholder {
-    transform: scale(0.6);
-    transform-origin: right;
-    float: right;
-  }
-  .social__send-email::placeholder {
-    transform: scale(0.6);
-    transform-origin: right;
-    float: right;
-  }
-}
-.social__media {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.social__media-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-}
-@media (max-width: 600px) {
-  .social__media-links {
-    width: 20px;
-    margin-right: 7px;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .social__media-links {
-    width: 40px;
-  }
-}
-.social__media-links:hover {
-  transform: translateY(-2px) scale(1.1);
-}
-.social__media-icon {
-  width: 100%;
-  height: 100%;
-}
-
-.address {
-  direction: rtl;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.address__wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgba(232, 231, 231, 0.6901960784);
-  width: 100%;
-  border-radius: 10px;
-}
-@media (max-width: 600px) {
-  .address__wrapper {
-    border-radius: 0px;
-    height: 100%;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .address__wrapper {
-    height: 100%;
-  }
-}
-.address__icon {
-  flex-basis: 20%;
-  width: 100px;
-}
-@media (max-width: 600px) {
-  .address__icon {
-    flex-basis: 10%;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .address__icon {
-    flex-basis: 30%;
-  }
-}
-.address__texts {
-  flex-basis: 60%;
-  display: flex;
-  flex-direction: column;
-  direction: rtl;
-  align-items: flex-start;
-}
-@media (max-width: 600px) {
-  .address__texts {
-    flex-basis: 90%;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .address__texts {
-    flex-basis: 70%;
-  }
-}
-.address__texts-text {
-  font-size: 20px;
-  font-size: "Vazir-Bold";
-}
-@media (max-width: 600px) {
-  .address__texts-text {
-    font-size: 10px;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .address__texts-text {
-    font-size: 16px;
-  }
-}
-
-.relationship {
-  direction: rtl;
-  display: flex;
-  max-width: 100%;
-  min-width: 100%;
-  margin: 0px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+:disabled {
   cursor: default;
 }
-@media (max-width: 600px) {
-  .relationship {
-    height: 100%;
-  }
-}
-.relationship__address {
-  font-size: 16px;
-  margin-right: 10px;
-}
-@media (max-width: 600px) {
-  .relationship__address {
-    font-size: 5px;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .relationship__address {
-    font-size: 11px;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .relationship__address {
-    font-size: 18px;
-  }
-}
-@media (min-width: 1370px) {
-  .relationship__address {
-    font-size: 25px;
-  }
-}
-@media (max-width: 600px) {
-  .relationship img {
-    width: 15px;
-  }
-}
-.relationship__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(232, 231, 231, 0.6901960784);
-  width: 100%;
-  height: 40px;
-  border-radius: 10px;
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
 }
 
-.header {
-  width: 100%;
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
   height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  padding: 0 8rem;
-  color: #243d20;
-  background-color: rgba(255, 255, 255, 0.9725490196);
-  z-index: 10000000000;
 }
-@media (max-width: 600px) {
-  .header {
-    padding: 0;
-  }
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
 }
-@media (max-width: 900px) and (min-width: 601px) {
-  .header {
-    padding: 0 4rem;
-  }
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
 }
-.header__top {
-  flex: 1 1 60%;
-  width: 100%;
-  display: flex;
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
 }
-.header__icons {
-  flex: 1 1 10%;
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.header__icons-icon {
-  width: 40px;
-}
-@media (max-width: 600px) {
-  .header__icons-icon {
-    width: 20px;
-  }
-}
-.header__icons-icon:hover {
-  transform: translateY(-2px);
-  transition: all 0.2s;
-}
-.header__icons-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-.header__search {
-  flex: 1 1 40%;
-  display: flex;
-  padding-top: 10px;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .header__search {
-    flex: 1 1 50%;
-  }
-}
-.header__search-input {
-  direction: rtl;
-  border: none;
-  border-radius: 10px;
-  height: 40px;
-  position: relative;
-  color: #262626;
-  font-size: 20px;
-  padding-right: 30px;
-  width: 100%;
-  background-color: #edf8ea;
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .header__search-input {
-    padding-right: 30px;
-    height: 30px;
-    border-radius: 5px;
-    font-size: 15px;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .header__search-input {
-    padding-right: 40px;
-    font-size: 25px;
-  }
-}
-@media (min-width: 1370px) {
-  .header__search-input {
-    padding-right: 55px;
-    font-size: 30px;
-  }
-}
-.header__search-input::-webkit-input-placeholder {
-  -webkit-appearance: none;
-  font-size: 25px;
-  color: #000;
-}
-@media (max-width: 600px) {
-  .header__search-input::-webkit-input-placeholder {
-    font-size: 20px;
-    transform-origin: right;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .header__search-input::-webkit-input-placeholder {
-    font-size: 20px;
-    transform-origin: right;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .header__search-input::-webkit-input-placeholder {
-    font-size: 30px;
-  }
-}
-@media (min-width: 1370px) {
-  .header__search-input::-webkit-input-placeholder {
-    font-size: 35px;
-  }
-}
-.header__search-input::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-          appearance: none;
-  position: relative;
-  right: -10px;
-  width: 20px;
-  height: 20px;
-  background: url("../../icons/close.svg") no-repeat center center;
-  background-size: cover;
-  cursor: pointer;
-}
-.header__search-icon {
-  position: absolute;
-  width: 20px;
-  right: 0;
-  margin-right: 5px;
-  cursor: pointer;
-}
-@media (max-width: 600px) {
-  .header__search-icon {
-    font-size: 100%;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .header__search-icon {
-    width: 20px;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .header__search-icon {
-    width: 30px;
-  }
-}
-@media (min-width: 1370px) {
-  .header__search-icon {
-    width: 40px;
-  }
-}
-.header__logo {
-  flex: 1 1 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding-top: 4px;
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .header__logo {
-    flex-direction: column;
-  }
-}
-.header__logo::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #64a507;
-}
-@media (max-width: 600px) {
-  .header__logo::before {
-    height: 0;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .header__logo::before {
-    height: 1px;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .header__logo::before {
-    height: 2px;
-  }
-}
-@media (min-width: 1370px) {
-  .header__logo::before {
-    height: 4px;
-  }
-}
-.header__logo-photo {
-  flex-basis: 20%;
-  max-width: 50px;
-  min-width: 40px;
-  max-height: 7rem;
-}
-.header__logo-text {
-  text-align: center;
+
+@font-face {
   font-family: "Sarbaz";
-  flex-basis: 80%;
-  font-size: 15px;
-}
-@media (max-width: 600px) {
-  .header__logo-text {
-    font-size: 12px;
-    max-height: 15px;
-    overflow: hidden;
-    width: 100%;
-    font-family: "Vazir-Light";
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .header__logo-text {
-    font-size: 12px;
-    max-height: 15px;
-    flex-basis: 25%;
-    overflow: hidden;
-    width: 100%;
-    font-family: "Vazir-Light";
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .header__logo-text {
-    font-size: 15px;
-    font-family: "Vazir-Light";
-  }
-}
-@media (min-width: 1370px) {
-  .header__logo-text {
-    font-size: 25px;
-  }
-}
-.header__bottom {
-  flex: 1 1 40%;
+
+  src: url("../../fonts/Sarbaz.otf");
 }
 
-.navigation {
-  display: flex;
-  width: 100%;
+@font-face {
+  font-family: "Vazir";
+
+  src: url("../../fonts/Vazir.ttf");
 }
-@media (max-width: 900px) and (min-width: 601px) {
-  .navigation {
-    margin-top: 10px;
-  }
+
+@font-face {
+  font-family: "Vazir-Light";
+
+  src: url("../../fonts/Vazir-Light.ttf");
 }
-.navigation__items {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  font-size: 14px;
-}
-@media (max-width: 600px) {
-  .navigation__items {
-    font-size: 11px;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .navigation__items {
-    font-size: 12px;
-  }
-}
-@media (max-width: 1100px) and (min-width: 901px) {
-  .navigation__items {
-    font-size: 18px;
-  }
-}
-@media (min-width: 1370px) {
-  .navigation__items {
-    font-size: 24px;
-  }
-}
-.navigation__items-item {
-  padding: 10px;
-  list-style: none;
-}
-@media (max-width: 600px) {
-  .navigation__items-item {
-    padding: 2px;
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) {
-  .navigation__items-item {
-    padding: 3px;
-  }
-}
-.navigation__items-item a {
-  text-decoration: none;
+
+@font-face {
   font-family: "Vazir-Bold";
-  color: #243d20;
-}
-.navigation__items-item a:hover {
-  color: #64a507;
-}
-.navigation__items-item:first-child a {
-  color: #64a507;
+
+  src: url("../../fonts/Vazir-Bold.ttf");
 }
 
-.navItems {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  font-family: "Vazir";
-  position: relative;
-}
-@media (max-width: 600px) {
-  .navItems {
-    font-size: 10px;
-  }
-}
-.navItems-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.navItems-link img {
-  width: 10px;
-}
-.navItems__lists {
-  right: 5px;
-  top: 50px;
-  background: rgba(248, 251, 245, 0.6117647059);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 120px;
-  height: 0px;
-  opacity: 0;
-  padding-right: 10px;
-  position: absolute;
-  direction: rtl;
-  color: #243d20;
-  transform: scale(0);
-  transform-origin: top;
-  transition: all 0.1s;
-}
-@media (max-width: 600px) {
-  .navItems__lists {
-    right: 5px;
-    top: 20px;
-    padding-bottom: 5px;
-  }
-}
-.navItems__lists-list {
-  padding-bottom: 5px;
-  list-style: none;
-}
-.navItems__lists-list::before {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: green;
-  height: 20px;
+@font-face {
+  font-family: "Vazir-Black";
+
+  src: url("../../fonts/Vazir-Black.ttf");
 }
 
-.nav {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  font-family: "Vazir";
-  position: relative;
+@font-face {
+  font-family: "Vazir-Medium";
+
+  src: url("../../fonts/Vazir-Medium.ttf");
 }
-@media (max-width: 600px) {
-  .nav {
-    font-size: 10px;
-  }
+
+@font-face {
+  font-family: "Vazir-Thin";
+
+  src: url("../../fonts/Vazir-Thin.ttf");
 }
-.nav-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+@font-face {
+  font-family: "MAVIS";
+
+  src: url("../../fonts/MAVIS.otf");
 }
-.nav-link img {
-  width: 10px;
+
+@font-face {
+  font-family: "MAVISBold";
+
+  src: url("../../fonts/MAVISBold.woff");
 }
-.nav__lists {
-  right: 5px;
-  top: 50px;
-  background: rgba(248, 251, 245, 0.6117647059);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 120px;
-  height: 0px;
-  opacity: 0;
-  padding-right: 10px;
-  position: absolute;
-  direction: rtl;
-  color: #243d20;
-  transform: scale(0);
-  transform-origin: top;
-  transition: all 0.1s;
+
+@font-face {
+  font-family: "MAVISLight";
+
+  src: url("../../fonts/MAVISLight.ttf");
 }
-@media (max-width: 600px) {
-  .nav__lists {
-    right: 5px;
-    top: 20px;
-    padding-bottom: 5px;
-  }
-}
-.nav__lists-list {
-  padding-bottom: 5px;
-  list-style: none;
-}
-.nav__lists-list::before {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: green;
-  height: 20px;
-}/*# sourceMappingURL=home.css.map */
