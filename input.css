@@ -43,7 +43,7 @@
       );
     background-repeat: no-repeat;
     object-fit: cover;
-    background-position: top center;
+    background-position: top;
     background-size: cover;
   }
 

@@ -590,10 +590,6 @@ video {
   right: 1rem;
 }
 
-.-z-10 {
-  z-index: -10;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -607,12 +603,16 @@ video {
   margin-right: auto;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .mt-12 {
   margin-top: 3rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -631,8 +631,16 @@ video {
   height: 50%;
 }
 
+.h-2\/6 {
+  height: 33.333333%;
+}
+
 .h-4\/6 {
   height: 66.666667%;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .h-auto {
@@ -641,10 +649,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-3\/6 {
@@ -665,6 +669,38 @@ video {
 
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-\[10\%_minmax\(75\%\2c _1fr\)_15\%\] {
+  grid-template-columns: 10% minmax(75%, 1fr) 15%;
+}
+
+.grid-cols-\[10\%_minmax\(90\%\2c _1fr\)\] {
+  grid-template-columns: 10% minmax(90%, 1fr);
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-\[10\%_minmax\(90\%\2c _1fr\)\] {
+  grid-template-rows: 10% minmax(90%, 1fr);
+}
+
+.grid-rows-\[30\%_minmax\(70\%\2c _1fr\)\] {
+  grid-template-rows: 30% minmax(70%, 1fr);
+}
+
+.grid-rows-\[40\%_minmax\(60\%\2c _1fr\)\] {
+  grid-template-rows: 40% minmax(60%, 1fr);
+}
+
+.grid-rows-\[35\%_minmax\(65\%\2c _1fr\)\] {
+  grid-template-rows: 35% minmax(65%, 1fr);
 }
 
 .flex-col {
@@ -699,12 +735,50 @@ video {
   border-style: hidden;
 }
 
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.bg-orange-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .font-vazir {
   font-family: vazir;
+}
+
+.font-vazir_Bold {
+  font-family: vazir-Bold;
+}
+
+.font-vazir_Light {
+  font-family: vazir-Light;
 }
 
 .text-4xl {
@@ -720,6 +794,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-\[\#c7c9d1b9\] {
@@ -795,7 +874,7 @@ video {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  background-position: top center;
+  background-position: top;
   background-size: cover;
 }
 
@@ -1106,6 +1185,21 @@ video {
 
 .\[\&\>\*\]\:font-vazir>* {
   font-family: vazir;
+}
+
+.\[\&\>\*\]\:text-lg>* {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.\[\&\>\*\]\:text-3xl>* {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.\[\&\>\*\]\:text-2xl>* {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .\[\&\>\*\]\:text-white>* {
