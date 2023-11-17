@@ -763,6 +763,10 @@ video {
   justify-content: space-around;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -904,6 +908,26 @@ video {
 .text-\[\#9195a4\] {
   --tw-text-opacity: 1;
   color: rgb(145 149 164 / var(--tw-text-opacity));
+}
+
+.text-\[\#003f00\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 63 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#e8845c\] {
+  --tw-text-opacity: 1;
+  color: rgb(232 132 92 / var(--tw-text-opacity));
+}
+
+.text-\[\#008693\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 134 147 / var(--tw-text-opacity));
+}
+
+.text-\[\#009827\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 152 39 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
