@@ -13,38 +13,67 @@
 	<!--=============== CONTAINER   ================-->
 	<div class="container bg-red-700 w-full h-screen m-0">
 	<!--===================  HEADER SITE  ================-->
-		<header class="w-full h-40 bg-sky-800">
+		<header class="w-full h-32 [&>*]:background-glass">
 			<!--===================  SEARCH AND REGISTER  ================-->
-			<div class="w-full bg-amber-400 h-1/2 grid grid-cols-[10%_minmax(80%,_1fr)_10%] justify-center items-center [&>*]:h-full">
-				<div class="bg-neutral-800">
-					ووذد/ثبتنام
+			<div class="w-full  h-1/2 grid grid-cols-[10%_minmax(75%,_1fr)_15%] justify-center items-center [&>*]:h-full">
+				<div class=" flex justify-center [&>*]:bgGlass items-center [&>*]:text-white [&>*]:font-vazir [&>*]:w-full [&>*]:h-full [&>*]:flex [&>*]:justify-center [&>*]:items-center [&>*]:flex-col">
+					<div class="[&>*]:cursor-pointer ">
+						<img src="../icons/SignUp.svg" alt="ثبت نام">
+						<i>ثبت نام</i>
+					</div>
+					<div class="[&>*]:cursor-pointer ">
+						<img src="../icons/login.svg" alt="ورود">
+						<i>ورود</i>
+					</div>
 				</div>
-				<div class="bg-red-400">
-					سرچ
+				<div class=" relative flex justify-start items-center py-4 px-8">
+					<img src="../icons/Search.svg" alt="جستجو" class="z-10">
+					<input type="search" class="font-vazir bg-transparent w-full h-full pr-4 text-white mr-4 outline-none border-hidden text-2xl" placeholder="جستجو" autocomplete="off">
 				</div>
-				<div class="bg-amber-800">
-					لوگو
+				<div class="flex justify-around items-center font-vazir text-white">
+					<h3 class="w-auto h-auto dir-lrt ">باغ ملی گنبدکاووس</h3>
+					<img src="../icons/iran.svg" alt="iran" >
 				</div>
 			</div>
 			<!--=============== NAVIGATION   ================-->
-			<nav class="w-full h-1/2 bg-green-600 grid grid-cols-6 justify-center items-center [&>*]:h-full "> 
-				<div class="bg-slate-800 h-full">
-					ضحهفه اصلی
+			<nav class="w-full h-1/2  grid grid-cols-6 justify-center items-center [&>*]:h-full text-white "> 
+				<div class="bg-slate-800 h-full flex justify-center items-center  flex-col">
+					<img src="../icons/home.svg" alt="" >
+					<p>صفحه اصلی</p>
 				</div>
-				<div class="bg-orange-600">
-					معرفی باغ
+				<div class="bg-orange-600 relative felx justify-center items-center">
+					<div class="list-description h-full w-full flex-col [&>*]:cursor-pointer font-vazir flex justify-center items-center bg-green-600">
+						<img src="../icons/Introduction.svg" alt="Introduction">
+						<h3>معرفی باغ</h3>
+					</div>
+					<ul  class="list-items  bg-glass-list absolute w-full opacity-0 h-0 flex flex-col justify-between items-start [&>*]:pr-4 [&>*]:cursor-pointer  [&>*]:w-full [&>*]:font-vazir [&>*]:text-right [&>*]:py-2">
+						<li class="hover:bg-glass-list-hover ">تاریخچه</li>
+						<li class="hover:bg-glass-list-hover ">بخش های باغ</li>
+						<li class="hover:bg-glass-list-hover ">مسیر بازدید</li>
+						<li class="hover:bg-glass-list-hover ">قوانین باغ</li>
+					</ul>
 				</div>
-				<div class="bg-orange-200">
-					گالری
+				<div class="bg-orange-200 h-full flex justify-center items-center  flex-col">
+					<img src="../icons/image.svg">
+					<p>گالری عکس</p>
 				</div>
-				<div class="bg-violet-800">
-					خاطرات بازدید
+				<div class="bg-violet-800 h-full flex justify-center items-center  flex-col">
+				<img src="../icons/leaf-maple.svg" alt="">
+				<p>خاطرات</p>
 				</div>
 				<div class="bg-slate-100">
-					درج خاطره
+					<img src="../icons/layer-plus.svg" alt="">
+					<p>درج خاطره</p>
 				</div>
-				<div class="bg-stone-600">
-					اموزش ویژه فنی
+				<div class="bg-stone-600  relative felx justify-center items-center" >
+					<div class=" list-description h-full w-full flex-col [&>*]:cursor-pointer font-vazir flex justify-center items-center bg-green-600">
+						<img src="../icons/land-mine-on.svg" alt="Introduction">
+						<h3>اموزش ویژه فنی</h3>
+					</div>
+					<ul  class="list-items  bg-glass-list absolute w-full opacity-0 h-0 flex flex-col justify-between items-start [&>*]:pr-4 [&>*]:cursor-pointer  [&>*]:w-full [&>*]:font-vazir [&>*]:text-right [&>*]:py-2">
+						<li class="hover:bg-glass-list-hover ">کاراگاه</li>
+						<li class="hover:bg-glass-list-hover "> مقالات</li>
+					</ul>
 				</div>
 			</nav>
 		</header>
@@ -56,5 +85,6 @@
 	<!--=============   FOOTER   ================-->
 	
 	<!--=============  SCRIPTS FILE   ================-->
+	<script src="../src/srcripts.js"></script>
 </body>
 </html>

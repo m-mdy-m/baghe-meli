@@ -574,8 +574,28 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-0 {
   margin: 0px;
+}
+
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .flex {
@@ -586,32 +606,36 @@ video {
   display: grid;
 }
 
-.h-screen {
-  height: 100vh;
+.hidden {
+  display: none;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.h-36 {
-  height: 9rem;
+.h-0 {
+  height: 0px;
 }
 
 .h-1\/2 {
   height: 50%;
 }
 
-.h-40 {
-  height: 10rem;
+.h-32 {
+  height: 8rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -622,75 +646,40 @@ video {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-\[10\%_minmax\(75\%\2c _1fr\)_15\%\] {
+  grid-template-columns: 10% minmax(75%, 1fr) 15%;
 }
 
-.grid-cols-\[\] {
-  grid-template-columns: ;
+.flex-col {
+  flex-direction: column;
 }
 
-.grid-cols-\[2\] {
-  grid-template-columns: 2;
-}
-
-.grid-cols-\[20\%\] {
-  grid-template-columns: 20%;
-}
-
-.grid-cols-\[200px_minmax\(900px\2c _1fr\)_100px\] {
-  grid-template-columns: 200px minmax(900px, 1fr) 100px;
-}
-
-.grid-cols-\[20\%_minmax\(900px\2c _1fr\)_100px\] {
-  grid-template-columns: 20% minmax(900px, 1fr) 100px;
-}
-
-.grid-cols-\[20\%_minmax\(900px\2c _1fr\)_20\%\] {
-  grid-template-columns: 20% minmax(900px, 1fr) 20%;
-}
-
-.grid-cols-\[20\%_minmax\(60\%\2c _1fr\)_20\%\] {
-  grid-template-columns: 20% minmax(60%, 1fr) 20%;
-}
-
-.grid-cols-\[20\%_minmax\(70\%\2c _1fr\)_20\%\] {
-  grid-template-columns: 20% minmax(70%, 1fr) 20%;
-}
-
-.grid-cols-\[10\%_minmax\(70\%\2c _1fr\)_20\%\] {
-  grid-template-columns: 10% minmax(70%, 1fr) 20%;
-}
-
-.grid-cols-\[10\%_minmax\(70\%\2c _1fr\)_10\%\] {
-  grid-template-columns: 10% minmax(70%, 1fr) 10%;
-}
-
-.grid-cols-\[10\%_minmax\(80\%\2c _1fr\)_10\%\] {
-  grid-template-columns: 10% minmax(80%, 1fr) 10%;
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
 
-.border-indigo-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(99 102 241 / var(--tw-border-opacity));
+.justify-between {
+  justify-content: space-between;
 }
 
-.bg-red-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+.justify-around {
+  justify-content: space-around;
 }
 
-.bg-sky-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(7 89 133 / var(--tw-bg-opacity));
+.border-hidden {
+  border-style: hidden;
 }
 
 .bg-green-600 {
@@ -698,9 +687,9 @@ video {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
-.bg-slate-800 {
+.bg-orange-200 {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
 }
 
 .bg-orange-600 {
@@ -708,19 +697,9 @@ video {
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
 }
 
-.bg-orange-200 {
+.bg-red-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
-}
-
-.bg-violet-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(91 33 182 / var(--tw-bg-opacity));
-}
-
-.bg-stone-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(87 83 78 / var(--tw-bg-opacity));
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100 {
@@ -728,56 +707,203 @@ video {
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
-.bg-amber-400 {
+.bg-slate-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-.bg-neutral-800 {
+.bg-stone-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+  background-color: rgb(87 83 78 / var(--tw-bg-opacity));
 }
 
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+.bg-transparent {
+  background-color: transparent;
 }
 
-.bg-amber-800 {
+.bg-violet-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(146 64 14 / var(--tw-bg-opacity));
+  background-color: rgb(91 33 182 / var(--tw-bg-opacity));
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.font-vazir {
+  font-family: vazir;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @font-face {
-  font-family: "Vazir";
+  font-family: "vazir";
 
   src: url("../fonts/Vazir.ttf");
 }
 
 @font-face {
-  font-family: "Vazir-Light";
+  font-family: "vazir-Light";
 
   src: url("../fonts/Vazir-Light.ttf");
 }
 
 @font-face {
-  font-family: "Vazir-Bold";
+  font-family: "vazir-Bold";
 
   src: url("../fonts/Vazir-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Vazir-Black";
+  font-family: "vazir-Black";
 
   src: url("../fonts/Vazir-Black.ttf");
 }
 
 @font-face {
-  font-family: "Vazir-Medium";
+  font-family: "vazir-Medium";
 
   src: url("../fonts/Vazir-Medium.ttf");
 }
 
+.bg-glass-list {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.12);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.1px);
+  -webkit-backdrop-filter: blur(17.1px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+}
+
+#list-items{
+  visibility: hidden;
+}
+
+.dir-lrt {
+  direction: ltr;
+}
+
+.hover\:bg-glass-list-hover:hover {
+  background: rgba(255, 255, 255, 0.27);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.1px);
+  -webkit-backdrop-filter: blur(17.1px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.hover\:bg-glass-list-hover:hover:last-child {
+  transition: all .3s;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.\[\&\>\*\]\:flex>* {
+  display: flex;
+}
+
 .\[\&\>\*\]\:h-full>* {
   height: 100%;
+}
+
+.\[\&\>\*\]\:w-full>* {
+  width: 100%;
+}
+
+.\[\&\>\*\]\:cursor-pointer>* {
+  cursor: pointer;
+}
+
+.\[\&\>\*\]\:flex-col>* {
+  flex-direction: column;
+}
+
+.\[\&\>\*\]\:items-center>* {
+  align-items: center;
+}
+
+.\[\&\>\*\]\:justify-center>* {
+  justify-content: center;
+}
+
+.\[\&\>\*\]\:py-2>* {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.\[\&\>\*\]\:pr-4>* {
+  padding-right: 1rem;
+}
+
+.\[\&\>\*\]\:text-right>* {
+  text-align: right;
+}
+
+.\[\&\>\*\]\:font-vazir>* {
+  font-family: vazir;
+}
+
+.\[\&\>\*\]\:text-white>* {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.\[\&\>\*\]\:bgGlass>* {
+  background: rgba(129, 125, 125, 0.37);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.\[\&\>\*\]\:bgGlass>*:hover {
+  /* From https://css.glass */
+  background: rgba(129, 125, 125, 0.61);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  transition: all 1s;
+}
+
+.\[\&\>\*\]\:background-glass>* {
+  /* From https://css.glass */
+  background: rgba(248, 241, 241, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
 }

@@ -4,23 +4,72 @@
 
 @layer utilities {
   @font-face {
-    font-family: "Vazir";
+    font-family: "vazir";
     src: url("../fonts/Vazir.ttf");
   }
   @font-face {
-    font-family: "Vazir-Light";
+    font-family: "vazir-Light";
     src: url("../fonts/Vazir-Light.ttf");
   }
   @font-face {
-    font-family: "Vazir-Bold";
+    font-family: "vazir-Bold";
     src: url("../fonts/Vazir-Bold.ttf");
   }
   @font-face {
-    font-family: "Vazir-Black";
+    font-family: "vazir-Black";
     src: url("../fonts/Vazir-Black.ttf");
   }
   @font-face {
-    font-family: "Vazir-Medium";
+    font-family: "vazir-Medium";
     src: url("../fonts/Vazir-Medium.ttf");
+  }
+  .bgGlass {
+    background: rgba(129, 125, 125, 0.37);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .bgGlass:hover {
+    /* From https://css.glass */
+    background: rgba(129, 125, 125, 0.61);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    transition: all 1s;
+  }
+  .background-glass {
+    /* From https://css.glass */
+    background: rgba(248, 241, 241, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+  }
+  .bg-glass-list {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.12);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.1px);
+    -webkit-backdrop-filter: blur(17.1px);
+    border: 1px solid rgba(255, 255, 255, 0.47);
+  }
+  .bg-glass-list-hover {
+    background: rgba(255, 255, 255, 0.27);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.1px);
+    -webkit-backdrop-filter: blur(17.1px);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+  }
+  .bg-glass-list-hover:last-child {
+    transition: all .3s;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  #list-items{
+    visibility: hidden;
+  }
+  .dir-lrt {
+    direction: ltr;
   }
 }
